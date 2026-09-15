@@ -178,11 +178,11 @@
 
   /* ---------- result ---------- */
   .result-hero{ text-align:center; padding:6px 0 18px; }
-  .result-hero .eyebrow{ font-size:12.5px; color:var(--muted); font-weight:600; margin-bottom:10px; }
-  .result-hero .kw-big{ font-size:52px; font-weight:700; color:var(--primary-dark); line-height:1; }
-  .result-hero .kw-big small{ font-size:20px; font-weight:600; color:var(--muted); }
-  .result-hero .class-pill{ display:inline-block; margin-top:14px; background:var(--accent-tint);
-    color:var(--accent-deep); font-weight:700; font-size:13.5px; padding:7px 14px; border-radius:20px; }
+  .result-line{ margin-bottom:0; }
+  .result-line__label{ display:block; font-size:13px; color:var(--muted); font-weight:600; margin-bottom:6px; }
+  .result-line--main .result-line__value{ font-size:40px; font-weight:800; color:var(--primary-dark); line-height:1.1; }
+  .result-line--class{ margin-top:18px; padding-top:16px; border-top:1px solid var(--line); }
+  .result-line--class .result-line__value{ font-size:22px; font-weight:700; color:var(--accent-deep); }
 
   .product-card{ display:flex; gap:12px; border:1.5px solid var(--line); border-radius:12px;
     padding:14px; margin:18px 0 6px; align-items:flex-start; }
@@ -273,23 +273,29 @@
    image        string   URL to a product photo. Leave "" to use the
                           built-in placeholder icon instead.
    active       boolean  false = hidden from customers, kept in DB
+
+   PRICES BELOW ARE PLACEHOLDERS — swap in the real installed-price
+   list once it's confirmed. The model names and capacities reflect the
+   agreed product-matching rules; see computeResult() below for how the
+   MHI Ciara 2.0kW carve-out works for small Budget Friendly rooms.
    ================================================================ */
 const PRODUCT_DATABASE = [
-  { model:"Delta Air EcoSplit 25",  category:"Budget Friendly", heatingKW:2.5, coolingKW:2.6, price:1699, image:"", active:true },
-  { model:"Delta Air EcoSplit 35",  category:"Budget Friendly", heatingKW:3.5, coolingKW:3.6, price:1949, image:"", active:true },
-  { model:"Delta Air EcoSplit 42",  category:"Budget Friendly", heatingKW:4.2, coolingKW:4.4, price:2199, image:"", active:true },
-  { model:"Delta Air EcoSplit 50",  category:"Budget Friendly", heatingKW:5.0, coolingKW:5.3, price:2549, image:"", active:true },
-  { model:"Delta Air EcoSplit 60",  category:"Budget Friendly", heatingKW:6.0, coolingKW:6.5, price:2899, image:"", active:true },
-  { model:"Delta Air EcoSplit 71",  category:"Budget Friendly", heatingKW:7.1, coolingKW:7.4, price:3299, image:"", active:true },
-  { model:"Delta Air EcoSplit 80",  category:"Budget Friendly", heatingKW:8.0, coolingKW:8.5, price:3699, image:"", active:true },
+  { model:"MHI Ciara 2.0",     category:"Budget Friendly", heatingKW:2.0, coolingKW:2.2, price:1599, image:"", active:true },
+  { model:"Daikin Lite 2.5",   category:"Budget Friendly", heatingKW:2.5, coolingKW:2.6, price:1899, image:"", active:true },
+  { model:"Daikin Lite 3.5",   category:"Budget Friendly", heatingKW:3.5, coolingKW:3.6, price:2199, image:"", active:true },
+  { model:"Daikin Lite 4.2",   category:"Budget Friendly", heatingKW:4.2, coolingKW:4.4, price:2499, image:"", active:true },
+  { model:"Daikin Lite 5.0",   category:"Budget Friendly", heatingKW:5.0, coolingKW:5.3, price:2799, image:"", active:true },
+  { model:"Daikin Lite 6.0",   category:"Budget Friendly", heatingKW:6.0, coolingKW:6.5, price:3099, image:"", active:true },
+  { model:"Daikin Lite 7.1",   category:"Budget Friendly", heatingKW:7.1, coolingKW:7.4, price:3499, image:"", active:true },
+  { model:"Daikin Lite 8.0",   category:"Budget Friendly", heatingKW:8.0, coolingKW:8.5, price:3899, image:"", active:true },
 
-  { model:"Delta Air Prestige 25",  category:"Premium Comfort", heatingKW:2.5, coolingKW:2.7, price:2399, image:"", active:true },
-  { model:"Delta Air Prestige 35",  category:"Premium Comfort", heatingKW:3.5, coolingKW:3.8, price:2699, image:"", active:true },
-  { model:"Delta Air Prestige 42",  category:"Premium Comfort", heatingKW:4.2, coolingKW:4.6, price:2999, image:"", active:true },
-  { model:"Delta Air Prestige 50",  category:"Premium Comfort", heatingKW:5.0, coolingKW:5.6, price:3399, image:"", active:true },
-  { model:"Delta Air Prestige 60",  category:"Premium Comfort", heatingKW:6.0, coolingKW:6.8, price:3899, image:"", active:true },
-  { model:"Delta Air Prestige 71",  category:"Premium Comfort", heatingKW:7.1, coolingKW:7.9, price:4399, image:"", active:true },
-  { model:"Delta Air Prestige 80",  category:"Premium Comfort", heatingKW:8.0, coolingKW:9.0, price:4899, image:"", active:true },
+  { model:"Daikin Alira X 2.5", category:"Premium Comfort", heatingKW:2.5, coolingKW:2.7, price:2399, image:"", active:true },
+  { model:"Daikin Alira X 3.5", category:"Premium Comfort", heatingKW:3.5, coolingKW:3.8, price:2699, image:"", active:true },
+  { model:"Daikin Cora 4.2",    category:"Premium Comfort", heatingKW:4.2, coolingKW:4.6, price:2999, image:"", active:true },
+  { model:"Daikin Cora 5.0",    category:"Premium Comfort", heatingKW:5.0, coolingKW:5.6, price:3399, image:"", active:true },
+  { model:"Daikin Cora 6.0",    category:"Premium Comfort", heatingKW:6.0, coolingKW:6.8, price:3899, image:"", active:true },
+  { model:"Daikin Cora 7.1",    category:"Premium Comfort", heatingKW:7.1, coolingKW:7.9, price:4399, image:"", active:true },
+  { model:"Daikin Cora 8.0",    category:"Premium Comfort", heatingKW:8.0, coolingKW:9.0, price:4899, image:"", active:true },
 ];
 
 /* ================================================================
@@ -525,10 +531,15 @@ function screenDimensions(root){
 
   const err=document.createElement("div"); err.className="error"; err.textContent="Please enter length, width and ceiling height as numbers greater than 0.";
   root.appendChild(err);
+  const errRange=document.createElement("div"); errRange.className="error"; errRange.textContent="That doesn't look like a typical residential room — please check the numbers (length/width up to 25m, ceiling up to 6m), or call us if it's genuinely larger.";
+  root.appendChild(errRange);
 
+  const MAX_SIDE = 25, MAX_CEIL = 6;
   const next=()=>{
+    err.classList.remove("show"); errRange.classList.remove("show");
     const L=parseFloat(lenI.value), W=parseFloat(widI.value), C=parseFloat(ceilI.value);
     if (!(L>0) || !(W>0) || !(C>0)){ err.classList.add("show"); return; }
+    if (L>MAX_SIDE || W>MAX_SIDE || C>MAX_CEIL){ errRange.classList.add("show"); return; }
     state.length=L; state.width=W; state.ceiling=C;
     goNext();
   };
@@ -556,9 +567,14 @@ function screenOpenArea(root){
     root.appendChild(f);
     const err=document.createElement("div"); err.className="error"; err.textContent="Please enter the extra area in square metres.";
     root.appendChild(err);
+    const errRange=document.createElement("div"); errRange.className="error"; errRange.textContent="That's a lot of connected area for a typical home — please check the number (up to 100m²), or call us if it's genuinely that large.";
+    root.appendChild(errRange);
+    const MAX_AREA = 100;
     const next=()=>{
+      err.classList.remove("show"); errRange.classList.remove("show");
       const A=parseFloat(i.value);
       if (!(A>=0)){ err.classList.add("show"); return; }
+      if (A>MAX_AREA){ errRange.classList.add("show"); return; }
       state.openAreaSize=A; goNext();
     };
     root.appendChild(navRow(goBack,next));
@@ -664,8 +680,22 @@ function compute(){
   if (estimatedKW > REFERRAL_KW_THRESHOLD) referral = true;
 
   const candidates = PRODUCT_DATABASE.filter(p => p.active && p.category === state.preference);
-  let product = candidates.filter(p=>p.heatingKW >= systemClass).sort((a,b)=>a.heatingKW-b.heatingKW)[0];
-  if (!product) product = candidates.sort((a,b)=>b.heatingKW-a.heatingKW)[0];
+
+  // Product-matching rules (calculation above this point is unchanged):
+  //  - Budget Friendly at 2.0kW estimated requirement or below: always the
+  //    MHI Ciara 2.0kW class specifically — never a larger Budget Friendly
+  //    unit such as the Daikin Lite 2.5, even though it would technically
+  //    also "fit".
+  //  - Everything else: the smallest active, suitable product in the
+  //    chosen category, matched against the rated heating capacity.
+  let product;
+  if (state.preference === "Budget Friendly" && estimatedKW <= 2.0) {
+    product = candidates.find(p => /MHI Ciara/i.test(p.model));
+  }
+  if (!product) {
+    product = candidates.filter(p=>p.heatingKW >= systemClass).sort((a,b)=>a.heatingKW-b.heatingKW)[0];
+    if (!product) product = candidates.sort((a,b)=>b.heatingKW-a.heatingKW)[0];
+  }
 
   result = { floorArea, totalFloorArea, totalVolume, base, adjusted, climate, estimatedKW, systemClass, product };
 }
@@ -686,9 +716,14 @@ function screenResult(root){
   root.innerHTML="";
   const hero=document.createElement("div"); hero.className="result-hero";
   hero.innerHTML = `
-    <div class="eyebrow">Estimated heat requirement</div>
-    <div class="kw-big">${result.estimatedKW.toFixed(1)}<small> kW</small></div>
-    <div class="class-pill">Likely system size: ${result.systemClass.toFixed(1)} kW class</div>
+    <div class="result-line result-line--main">
+      <span class="result-line__label">Estimated heat requirement:</span>
+      <span class="result-line__value">${result.estimatedKW.toFixed(1)} kW</span>
+    </div>
+    <div class="result-line result-line--class">
+      <span class="result-line__label">Recommended system class:</span>
+      <span class="result-line__value">${result.systemClass.toFixed(1)} kW</span>
+    </div>
   `;
   root.appendChild(hero);
 
