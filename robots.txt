@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://deltaair.co.nz/sitemap.xml
