@@ -1,0 +1,63 @@
+{
+  "name": "Delta Air Solutions",
+  "short_name": "Delta Air",
+  "description": "Heat pumps, ducted systems and home ventilation across Auckland and Waikato. Free quotes, fast install.",
+  "start_url": "/?source=app",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "en-NZ",
+  "dir": "ltr",
+  "categories": [
+    "business",
+    "utilities"
+  ],
+  "theme_color": "#0B2C6B",
+  "background_color": "#FFFFFF",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192-maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Get a free quote",
+      "short_name": "Quote",
+      "description": "Go straight to the quote form",
+      "url": "/?source=app#contact"
+    },
+    {
+      "name": "Heat pump sizing calculator",
+      "short_name": "Calculator",
+      "description": "Work out what size you need",
+      "url": "/calculator.html?source=app"
+    },
+    {
+      "name": "Our solutions",
+      "short_name": "Solutions",
+      "description": "Heat pumps, ducted, ventilation and more",
+      "url": "/solutions.html?source=app"
+    }
+  ]
+}
