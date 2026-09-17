@@ -1,0 +1,76 @@
+{
+  "name": "Delta Air Solutions — Quality HVAC Solutions",
+  "short_name": "Delta Air",
+  "description": "Heat pumps, ducted heating and cooling, and home ventilation across Auckland and Waikato. Free quotes, fast install, five-year warranty.",
+  "start_url": "/",
+  "id": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": [
+    "standalone",
+    "minimal-ui",
+    "browser"
+  ],
+  "orientation": "portrait-primary",
+  "background_color": "#0B1220",
+  "theme_color": "#0B2C6B",
+  "lang": "en-NZ",
+  "dir": "ltr",
+  "categories": [
+    "business",
+    "utilities"
+  ],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Get a free quote",
+      "short_name": "Free quote",
+      "description": "Jump straight to the quote request form",
+      "url": "/?source=pwa#contact",
+      "icons": [
+        {
+          "src": "/icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Call us",
+      "short_name": "Call",
+      "description": "Call 0800 247 888",
+      "url": "/tel:0800247888",
+      "icons": [
+        {
+          "src": "/icons/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "prefer_related_applications": false
+}
