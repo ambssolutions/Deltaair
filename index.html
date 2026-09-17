@@ -1,18 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-NZ">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>HVAC Solutions — Heat Pumps, Ducted, Ventilation | Delta Air Solutions</title>
-<meta name="description" content="Heat pumps, ducted heating and cooling, multi-room systems, ventilation, zoning and commercial HVAC across Auckland and Waikato. Retrofit and new build specialists.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delta Air Solutions — Heat pumps, ventilation &amp; air conditioning | Auckland &amp; Waikato</title>
+<meta name="description" content="Delta Air Solutions Ltd installs Daikin, Panasonic and Mitsubishi Electric heat pumps, ducted heating and cooling, and home ventilation across Auckland and Waikato. Free quotes, fast install, 5-year warranty. 0800 247 888.">
+<meta property="og:title" content="Delta Air Solutions — Quality HVAC Solutions">
+<meta property="og:description" content="Heat pumps, ducted systems and home ventilation across Auckland and Waikato. Free quotes. 0800 247 888.">
+<meta property="og:image" content="og-image.png">
+
+<!--
+=====================================================================
+  DELTA AIR SOLUTIONS LTD — single-page site
+  Everything below is taken from the Facebook page and flyers.
+
+  STILL TO CONFIRM before going live (search for "TODO"):
+   • Email address confirmed: deltaairnz@gmail.com
+   • NZBN / company number for the footer
+   • Opening hours
+   • Confirm the brand list: Daikin, Panasonic, Mitsubishi Electric, HRV
+   • The form needs an endpoint (Formspree or Vercel) — see comment at the form
+   • (Real icon/logo files now live in /icons — see icons/README below)
+=====================================================================
+-->
+
+<link rel="canonical" href="https://deltaair.co.nz/">
+<meta name="robots" content="index, follow">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B1220" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://deltaair.co.nz/">
+<meta property="og:site_name" content="Delta Air Solutions">
+<meta property="og:locale" content="en_NZ">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Delta Air Solutions — Heat pumps, ventilation &amp; air conditioning">
+<meta name="twitter:description" content="Daikin, Panasonic and Mitsubishi Electric heat pumps, ducted systems and home ventilation across Auckland and Waikato. Free quotes. 0800 247 888.">
+<meta name="twitter:image" content="https://deltaair.co.nz/og-image.png">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32">
 <link rel="icon" href="favicon-16x16.png" type="image/png" sizes="16x16">
 <link rel="icon" href="icon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Delta Air">
+<!-- Bump this alongside CACHE_VERSION in sw.js and the version in version.json
+     on every deploy — it's what the page compares against to know a new
+     version has shipped. Keep all three identical. -->
+<meta name="app-version" content="delta-air-v64">
+
+<!-- Tells Google the phone numbers, service areas and hours directly.
+     UPDATE the address, hours and NZBN once confirmed, and change the
+     domain if it isn't deltaair.co.nz. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HVACBusiness",
+  "name": "Delta Air Solutions Ltd",
+  "alternateName": "Delta Air",
+  "description": "Heat pump, ducted heating and cooling, home ventilation and air conditioning installation and servicing across Auckland and Waikato.",
+  "url": "https://deltaair.co.nz/",
+  "logo": "https://deltaair.co.nz/og-image.png",
+  "image": "https://deltaair.co.nz/og-image.png",
+  "telephone": "+6408002478888",
+  "email": "deltaairnz@gmail.com",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Gordonton",
+    "addressRegion": "Waikato",
+    "addressCountry": "NZ"
+  },
+  "areaServed": [
+    {"@type":"City","name":"Hamilton"},{"@type":"City","name":"Cambridge"},
+    {"@type":"City","name":"Te Awamutu"},{"@type":"City","name":"Morrinsville"},
+    {"@type":"City","name":"Ngaruawahia"},{"@type":"City","name":"Huntly"},
+    {"@type":"City","name":"Tauranga"},{"@type":"City","name":"Auckland"},
+    {"@type":"City","name":"East Tamaki"},{"@type":"City","name":"Manukau"},
+    {"@type":"City","name":"Papakura"},{"@type":"City","name":"Pukekohe"}
+  ],
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "07:30", "closes": "17:00"
+  }],
+  "sameAs": ["https://www.facebook.com/share/1Ewu4qPWee/", "https://maps.app.goo.gl/xtZ1iGaVWvUuCjAD9"],
+  "makesOffer": [
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Heat pump supply and installation"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Heat pumps for new builds and homes under construction"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Ducted heating and cooling"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Multi-room heat pump systems"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Home ventilation and HRV"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Heat pump service and maintenance"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Commercial HVAC"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Electrical services"}}
+  ]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+
 <style>
 :root{
   /* Logo is embedded as base64 so the file works on its own with no extra
@@ -68,35 +160,50 @@ img{max-width:100%;height:auto;display:block}
 .btn--ghost:hover{border-color:var(--blue-600);color:var(--blue-800)}
 
 /* Header */
-.giveaway-carousel{color:#fff;transition:background .5s ease}
-@media(min-width:901px){
-  .giveaway-carousel{position:sticky;top:72px;z-index:49}
-}
+.giveaway-carousel{color:#fff;transition:background .5s ease;position:sticky;top:72px;z-index:49}
+/* The offset must match the header's real height, or the header overlaps
+   the bar once stuck and it looks like the bar is shrinking. Measured at
+   72px on desktop and 70px from 980px down. */
+@media(max-width:1023px){.giveaway-carousel{top:70px}}
 .giveaway-carousel[data-scheme="orange"]{background:linear-gradient(100deg,var(--red-600),var(--orange-500))}
 .giveaway-carousel[data-scheme="blue"]{background:linear-gradient(100deg,var(--blue-900),var(--blue-600))}
-.giveaway-carousel__inner{display:flex;align-items:center;justify-content:center;gap:1.1rem;flex-wrap:nowrap;padding:.5rem 22px;text-align:center;min-height:0}
-.giveaway-carousel__viewport{flex:1 1 auto;min-width:0;max-width:640px;overflow:hidden}
-.giveaway-carousel__text{display:inline-block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-family:"Montserrat",sans-serif;font-weight:600;font-size:.98rem;line-height:1;margin-top:-3px;transition:opacity .3s ease}
-.giveaway-carousel__text b{font-weight:800}
-.giveaway-carousel__text.is-fading{opacity:0}
+.giveaway-carousel__inner{display:flex;align-items:center;justify-content:center;gap:1.4rem;flex-wrap:nowrap;padding:.5rem 22px;text-align:center;min-height:0}
+.giveaway-carousel__viewport{flex:1 1 auto;min-width:0;overflow:hidden}
+/* Continuous right-to-left marquee: one long strip of all the messages,
+   rendered twice so the animation can loop without a visible seam. */
+.giveaway-carousel__marquee{display:flex;width:max-content;will-change:transform;animation:giveawayMarquee 38s linear infinite}
+.giveaway-carousel:hover .giveaway-carousel__marquee{animation-play-state:paused}
+.giveaway-carousel__strip{
+  display:inline-flex;align-items:center;flex:0 0 auto;white-space:nowrap;
+  font-family:"Montserrat",sans-serif;font-weight:600;font-size:.98rem;line-height:1;
+}
+/* 800 against 600 reads as a size jump in Montserrat, so the emphasis is
+   kept to a single step and the strip stays visually even. */
+.giveaway-carousel__strip{font-weight:700}
+.giveaway-carousel__strip b{font-weight:700}
+.giveaway-carousel__sep{display:inline-block;width:4.5rem}
+@keyframes giveawayMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.giveaway-carousel__marquee{animation:none}}
 .giveaway-carousel__cta{font-family:"Montserrat",sans-serif;font-weight:800;font-size:.9rem;color:var(--red-600);background:#fff;text-decoration:none;white-space:nowrap;flex:0 0 auto;padding:.42rem 1.05rem;border-radius:999px;box-shadow:0 3px 10px rgba(0,0,0,.22);transition:transform .15s ease,box-shadow .15s ease;animation:ctaFlash 1.6s ease-in-out infinite}
 @keyframes ctaFlash{0%,100%{opacity:1}50%{opacity:.55}}
 @media(prefers-reduced-motion:reduce){.giveaway-carousel__cta{animation:none}}
 .giveaway-carousel__cta:hover{transform:translateY(-1px);box-shadow:0 5px 14px rgba(0,0,0,.28)}
-.giveaway-carousel[data-scheme="blue"] .giveaway-carousel__cta{color:var(--blue-800)}
+/* When the bar turns blue (hero in heating mode) the white pill blends in,
+   so the button flips to orange for contrast. */
+.giveaway-carousel[data-scheme="blue"] .giveaway-carousel__cta{background:linear-gradient(100deg,#F47B20,#D32017);color:#fff}
 .giveaway-carousel.is-hidden{display:none}
 @media(max-width:640px){
   .giveaway-carousel__inner{padding:.42rem 10px;gap:.6rem}
-  .giveaway-carousel__text{font-size:.8rem}
+  .giveaway-carousel__strip{font-size:.8rem}
   .giveaway-carousel__cta{font-size:.8rem;padding:.38rem .75rem}
 }
 @media(max-width:360px){
-  .giveaway-carousel__text{font-size:.72rem}
+  .giveaway-carousel__strip{font-size:.72rem}
   .giveaway-carousel__cta{font-size:.72rem;padding:.34rem .65rem}
 }
 @media(max-width:330px){
   .giveaway-carousel__inner{gap:.4rem}
-  .giveaway-carousel__text{font-size:.66rem}
+  .giveaway-carousel__strip{font-size:.66rem}
   .giveaway-carousel__cta{font-size:.66rem;padding:.3rem .55rem}
 }
 
@@ -105,7 +212,7 @@ img{max-width:100%;height:auto;display:block}
 /* a little breathing room under the logo on laptop/desktop */
 .header__bar{display:flex;align-items:center;gap:1.4rem;padding:.5rem 22px .4rem;max-width:var(--wrap);margin:0 auto}
 
-/* Daikin heat pump giveaway — promo styles */
+/* Daikin heat pump giveaway — promo bar */
 .giveaway-fab{
   position:fixed;right:1.1rem;bottom:1.1rem;z-index:80;
   display:flex;align-items:center;gap:.6rem;
@@ -537,7 +644,7 @@ img{max-width:100%;height:auto;display:block}
 /* review carousel */
 .revs{position:relative;max-width:860px}
 .revs__viewport{overflow:hidden}
-.revs__track{display:flex;transition:transform .5s cubic-bezier(.3,.8,.3,1)}
+.revs__track{display:flex;transition:transform .38s cubic-bezier(.3,.8,.3,1)}
 .rev{flex:0 0 100%;padding:.2rem 0 .2rem 1.9rem;border-left:5px solid var(--orange-500)}
 .rev:nth-child(even){border-left-color:var(--blue-600)}
 .rev blockquote{margin:.6rem 0 1rem;font-size:clamp(1.08rem,2.2vw,1.3rem);line-height:1.45;font-family:"Montserrat";font-weight:600;letter-spacing:-.01em}
@@ -648,6 +755,7 @@ img{max-width:100%;height:auto;display:block}
   a{color:#9CC6FF}
 
   /* the unit stays white — it is a physical appliance, not a panel */
+
 }
 
 /* Footer */
@@ -671,8 +779,17 @@ img{max-width:100%;height:auto;display:block}
 .footer__social a[aria-label*="TikTok"]{background:#000}
 .footer__social a[aria-label*="Instagram"]{background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285AEB 90%)}
 .footer__social svg{width:20px;height:20px}
-.footer__base{border-top:1px solid rgba(255,255,255,.16);padding-top:1.2rem;display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;font-size:.86rem}
-.footer__credit{display:inline;color:#fff;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.35);padding:0}
+.footer__base{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.4rem 1.2rem;padding-top:1.1rem;border-top:1px solid rgba(255,255,255,.12);font-size:.86rem;color:rgba(255,255,255,.7)}
+/* keep the credit on a single line rather than wrapping mid-phrase */
+.footer__base > span{white-space:nowrap}
+.footer__credit{white-space:nowrap}
+@media(max-width:560px){
+  .footer__base{justify-content:center;text-align:center}
+  .footer__base > span,.footer__credit{white-space:normal}
+}
+/* .footer a sets display:block for the link columns; the credit is inline
+   text inside a sentence, so it needs to opt out or it drops to its own line. */
+.footer .footer__credit{display:inline;color:#fff;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.35);padding:0}
 .footer__credit:hover{color:var(--orange-400);border-bottom-color:var(--orange-400)}
 @media(max-width:820px){.footer__grid{grid-template-columns:1fr;gap:1.6rem}}
 
@@ -791,7 +908,7 @@ img{max-width:100%;height:auto;display:block}
    Closed by default; .run rotates the flap open and reveals the dark
    vent gap behind it. */
 .hpunit__vent{
-  position:absolute;left:22px;right:22px;bottom:32px;height:9px;
+  position:absolute;left:22px;right:22px;bottom:30px;height:14px;
   border-radius:2px 2px 7px 7px;
   /* Closed: same tone as the unit body, so nothing shows through the
      seams of the flap sitting over it. */
@@ -813,7 +930,7 @@ img{max-width:100%;height:auto;display:block}
 }
 .hpunit.run .hpunit__vent::before{opacity:.48}
 .hpunit__flap{
-  position:absolute;left:-2px;right:-2px;top:-3px;height:15px;z-index:3;
+  position:absolute;left:-2px;right:-2px;top:-3px;height:20px;z-index:3;
   /* Closed state: matches the unit's own body so the vent reads as
      completely sealed, with only a hairline seam to suggest the join. */
   background:linear-gradient(180deg,#fdfefe 0%,#f7f9fb 55%,#eef1f5 100%);
@@ -825,22 +942,27 @@ img{max-width:100%;height:auto;display:block}
   transition:transform 1.7s cubic-bezier(.4,.05,.3,1),box-shadow 1.7s ease,border-color 1.7s ease;
 }
 .hpunit.run .hpunit__flap{
-  transform:perspective(90px) rotateX(-58deg) translateY(4px);
+  transform:perspective(90px) rotateX(-74deg) translateY(5px);
   box-shadow:0 6px 6px rgba(3,12,36,.24);
   transition-duration:1.9s;transition-delay:1.9s;
 }
-.hpunit__air{top:calc(100% - 46px)}
+/* Airflow must emanate from BELOW the vent opening, not above it. The vent
+   sits 32px up from the unit base and is 9px tall, so its lower edge is
+   ~23px from the bottom — start the airflow just under that. */
+.hpunit__air{top:calc(100% - 21px)}
 /* When the unit is running, open up more room beneath it so the airflow
    animation has space to breathe before the headline starts. The delay
    lets the vent finish opening first. */
-.hpunit.spaced{margin-bottom:clamp(3.2rem,6vw,5rem);transition-delay:1.9s}
+/* The heading drops as the air becomes visible, not when the vent starts
+   opening — the airflow animation begins at 3.6s, so the delay matches it. */
+.hpunit.spaced{margin-bottom:clamp(3.2rem,6vw,5rem);transition-delay:3.6s;transition-duration:1.2s}
 
 @media(max-width:640px){
-  .hpunit{padding:3.6% 4% 11%;width:100%;min-height:104px}
+  .hpunit{padding:3.6% 4% 15%;width:100%;min-height:118px}
   .hpunit-mount{display:block}
-  .hpunit__logo{left:14px;bottom:36px;width:64px}
+  .hpunit__logo{left:14px;bottom:38px;width:60px}
   .hpunit .toggle{padding:4px 4px;gap:.3rem;min-height:44px}
-  .hpunit__vent{left:14px;right:14px;bottom:26px;height:6px}
+  .hpunit__vent{left:14px;right:14px;bottom:24px;height:10px}
   /* Keep everything on one row on phones by shrinking the controls */
   .toggle__row{flex-wrap:nowrap;gap:.3rem}
   .toggle__stat{min-width:0;padding:3px 6px;gap:2px;height:44px}
@@ -854,12 +976,19 @@ img{max-width:100%;height:auto;display:block}
   .toggle__power em,.toggle__mode em{font-size:.54rem}
   .toggle__div{height:24px}
 }
+/* Narrowest phones: the hint is too wide to sit beside the badge, so give
+   the badge its own centred line beneath it rather than letting them collide. */
+@media(max-width:380px){
+  .hpunit{padding:3.6% 4% 20%;min-height:128px}
+  .hpunit__logo{left:50%;transform:translateX(-50%);bottom:40px;width:56px}
+  .hpunit__hint{font-size:.6rem}
+}
 
 
 /* ===== Solutions sections ===== */
 .sol{scroll-margin-top:0}
 
-.sol__eyebrow{display:inline-block;font-family:"Montserrat",sans-serif;font-weight:800;font-size:.92rem;letter-spacing:.04em;color:var(--blue-600);margin-bottom:.45rem}
+.sol__eyebrow{display:inline-block;font-family:"Montserrat",sans-serif;font-weight:800;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--blue-600);margin-bottom:.5rem}
 .sol__badges{display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 1.6rem}
 .sol__badge{font-family:"Montserrat",sans-serif;font-weight:700;font-size:.78rem;color:var(--blue-800);background:#fff;border:1px solid var(--line);border-radius:999px;padding:.4rem 1rem}
 .sol__cards{display:grid;gap:1.2rem;margin-bottom:1.6rem}
@@ -883,7 +1012,7 @@ img{max-width:100%;height:auto;display:block}
 .sol__product h3{font-size:1.02rem;margin:0 0 .4rem;color:var(--blue-800)}
 .sol__product p{margin:0 0 .7rem;color:var(--muted);font-size:.92rem}
 .sol__elec{font-size:.9rem;color:var(--muted);font-style:italic;border-left:3px solid var(--line);padding-left:.9rem;margin:0 0 1.6rem}
-.sol__cta{display:flex;flex-wrap:wrap;gap:.8rem;justify-content:center}
+.sol__cta{display:flex;flex-wrap:wrap;gap:.8rem}
 @media(max-width:900px){
   .sol__cards--3,.sol__products{grid-template-columns:repeat(2,1fr)}
 }
@@ -896,7 +1025,12 @@ img{max-width:100%;height:auto;display:block}
    the desktop sizing is too wide to fit, but the phone overrides don't
    apply yet — without this the HEAT button wraps onto a second line and
    collides with the Daikin badge. */
+/* Tablet range. Above 640px the phone overrides stop applying, but the
+   unit isn't width-matched to the headline until 900px — so without these
+   the desktop logo/hint sizing lands inside a much smaller box and the
+   Daikin badge collides with the control row. */
 @media(min-width:641px) and (max-width:980px){
+  .hpunit{width:100%;min-height:150px;padding:4% 4% 14%}
   .toggle__row{flex-wrap:nowrap;gap:.3rem}
   .toggle__stat{min-width:0;padding:4px 8px}
   .toggle__stat i{font-size:.56rem}
@@ -904,39 +1038,126 @@ img{max-width:100%;height:auto;display:block}
   .toggle__power,.toggle__mode{min-width:0;padding:5px 7px}
   .toggle__step{width:19px;height:19px;font-size:.78rem}
   .toggle__temp-ctrl{gap:.25rem}
+  .hpunit__hint{font-size:.76rem;margin-top:.45rem}
+  .hpunit__hint svg{width:13px;height:13px}
+  .hpunit__logo{left:18px;bottom:40px;width:80px}
+  .hpunit__vent{left:16px;right:16px;bottom:22px;height:8px}
 }
 
+.sol__link{display:block;background:#fff;border:1px solid var(--line);border-radius:14px;padding:1.4rem;text-decoration:none;transition:border-color .15s,box-shadow .15s,transform .12s}
+.sol__link:hover{border-color:var(--blue-400);box-shadow:0 10px 24px rgba(11,44,107,.08);transform:translateY(-2px)}
+.sol__link h3{font-size:1.02rem;margin:0 0 .4rem;color:var(--ink)}
+.sol__link p{margin:0;color:var(--muted);font-size:.92rem;line-height:1.55}
+
+/* The hint text comes in three lengths so it stays comfortably inside the
+   unit at any width, rather than one long sentence crowding narrow units. */
+.hpunit__hint-mid,.hpunit__hint-short{display:none}
+@media(max-width:820px){
+  .hpunit__hint-full{display:none}
+  .hpunit__hint-mid{display:inline}
+}
+@media(max-width:400px){
+  .hpunit__hint-mid{display:none}
+  .hpunit__hint-short{display:inline}
+}
+
+
+
+/* Countdown pill — always visible, sitting beside the sliding carousel. */
+.giveaway-carousel__clock{
+  flex:0 0 auto;display:inline-flex;align-items:center;gap:.25rem;
+  font-family:"Barlow",monospace;font-weight:700;font-size:.76rem;
+  color:#fff;background:rgba(0,0,0,.2);
+  border:1px solid rgba(255,255,255,.3);border-radius:999px;
+  padding:.2rem .55rem;white-space:nowrap;letter-spacing:.01em;
+}
+@media(max-width:780px){.giveaway-carousel__clock{font-size:.66rem;padding:.16rem .4rem}}
+@media(max-width:520px){.giveaway-carousel__clock{font-size:.6rem;padding:.14rem .32rem;gap:.15rem}}
+@media(max-width:400px){.giveaway-carousel__clock{font-size:.55rem;padding:.12rem .28rem}}
+
+/* ===== Dark mode: components defined after the main dark block =====
+   These selectors are declared later in the file, so their light-mode
+   values would otherwise win on source order regardless of the media
+   query. Keeping them here, last, makes the override reliable. */
+@media (prefers-color-scheme: dark){
+  .sol__link{background:var(--surface-2);border-color:var(--line)}
+  .sol__link h3{color:var(--ink)}
+  .sol__link p{color:var(--muted)}
+  .sol__link:hover{border-color:#9CC6FF;box-shadow:0 10px 24px rgba(0,0,0,.45)}
+
+  .nav__panel{background:var(--surface-2);border-color:var(--line);box-shadow:0 18px 38px rgba(0,0,0,.55)}
+  .nav__panel a{color:var(--ink)}
+  .nav__panel a:hover{background:rgba(156,198,255,.12)}
+  .nav__panel-back{color:#9CC6FF;border-bottom-color:var(--line)}
+  .nav.is-open{background:var(--surface-2);border-bottom-color:var(--line);box-shadow:0 18px 32px rgba(0,0,0,.55)}
+  .nav > a, .nav > .nav__drop{border-bottom-color:var(--line)}
+  .nav a, .nav__drop-btn{color:var(--ink)}
+}
+
+/* ===== Manual light/dark toggle =====
+   [data-theme] on <html> overrides the OS preference, so the same
+   dark styles apply whichever way the theme was chosen. */
+html[data-theme="dark"]{
+  --ink:#E9EFF7; --muted:#97A6BC; --line:#22314C;
+  --surface:#0B1220; --surface-2:#111B2C; --footer:#060B14;
+}
+html[data-theme="dark"] body{background:var(--surface)}
+html[data-theme="dark"] .header{background:rgba(11,18,32,.92);border-bottom-color:var(--line)}
+html[data-theme="dark"] .burger{color:var(--ink);border-color:var(--line)}
+html[data-theme="dark"] .header__call{border-color:var(--line);color:#9CC6FF}
+html[data-theme="dark"] .hero__card,
+html[data-theme="dark"] .offer,
+html[data-theme="dark"] .form,
+html[data-theme="dark"] .revs__arrow,
+html[data-theme="dark"] .brands span,
+html[data-theme="dark"] .cards span{background:#121D31;border-color:var(--line);color:var(--ink)}
+html[data-theme="dark"] .hero__card .price,
+html[data-theme="dark"] .offer .price{color:#9CC6FF}
+html[data-theme="dark"] .field input,
+html[data-theme="dark"] .field select,
+html[data-theme="dark"] .field textarea{background:#0D1626;border-color:var(--line);color:var(--ink)}
+html[data-theme="dark"] .sol__link{background:var(--surface-2);border-color:var(--line)}
+html[data-theme="dark"] .sol__link h3{color:var(--ink)}
+html[data-theme="dark"] .sol__link p{color:var(--muted)}
+html[data-theme="dark"] .sol__card,
+html[data-theme="dark"] .sol__note,
+html[data-theme="dark"] .sol__product{background:var(--surface-2);border-color:var(--line)}
+html[data-theme="dark"] .nav__panel{background:var(--surface-2);border-color:var(--line);box-shadow:0 18px 38px rgba(0,0,0,.55)}
+html[data-theme="dark"] .nav__panel a{color:var(--ink)}
+html[data-theme="dark"] .nav__panel-back{color:#9CC6FF;border-bottom-color:var(--line)}
+html[data-theme="dark"] .nav.is-open{background:var(--surface-2);border-bottom-color:var(--line);box-shadow:0 18px 32px rgba(0,0,0,.55)}
+/* the submenu fills the panel, so drop the strip of nav padding that
+   otherwise shows as a mismatched band under the last item */
+html[data-theme="dark"] .nav.submenu-active{padding-bottom:0}
+.nav.submenu-active{padding-bottom:0}
+html[data-theme="dark"] .nav > a,
+html[data-theme="dark"] .nav > .nav__drop{border-bottom-color:var(--line)}
+html[data-theme="dark"] .nav a,
+html[data-theme="dark"] .nav__drop-btn{color:var(--ink)}
+html[data-theme="dark"] a{color:#9CC6FF}
+
+/* Force light even when the OS prefers dark */
+html[data-theme="light"] body{background:var(--bg)}
+
+
+
+/* Dark mode: both CTAs go blue rather than inheriting the light-mode
+   white/orange fills, which were leaving pale blue text on pale
+   backgrounds and reading poorly. */
+/* Scoped to the dark media query — without it these applied in light mode
+   too, which left the "Enter now" button white-on-white while the hero was
+   in heating mode. */
+@media (prefers-color-scheme: dark){
+  .giveaway-carousel__cta{background:#1A5FCB;color:#fff;box-shadow:0 3px 10px rgba(0,0,0,.35)}
+  .giveaway-carousel[data-scheme="blue"] .giveaway-carousel__cta{background:linear-gradient(100deg,#F47B20,#D32017);color:#fff}
+}
+/* The bottom call bar keeps its light-mode colours in dark mode — the
+   0800 button and Free quote button stay exactly as they are. Only the
+   text colour is pinned white, so the dark-mode link colour can't leak in. */
 .callbar a{color:#fff!important}
-
-/* Single-button variant of the sticky bar */
-.callbar--single{grid-template-columns:1fr}
-.callbar--single a{background:linear-gradient(100deg,#F47B20,#D32017);transition:opacity .2s ease}
-.callbar--single a.is-swapping{opacity:0}
-
-/* Below 900px the sticky bottom bar already carries each section's CTA,
-   so the in-section buttons would just repeat it. Hide them there and
-   keep them on wider screens, where no sticky bar appears. */
-@media(max-width:900px){
-  .sol__cta{display:none}
+@media (prefers-color-scheme: light){
+  html:not([data-theme="dark"]) .giveaway-carousel__cta{background:#fff;color:var(--red-600);box-shadow:0 3px 10px rgba(0,0,0,.22)}
 }
-
-/* Heat Pumps keeps its in-section button on mobile: the sticky bar offers
-   a quote there, so the blue calculator link isn't a duplicate. */
-@media(max-width:900px){
-  #heat-pumps .sol__cta{display:flex}
-}
-
-/* Closing quote CTA above the footer */
-.sol-endcta{background:linear-gradient(120deg,var(--blue-900),var(--blue-800));color:#fff;text-align:center;padding:clamp(48px,7vw,72px) 0}
-.sol-endcta h2{color:#fff;font-size:clamp(1.4rem,3vw,1.9rem);margin:0 0 .6rem}
-.sol-endcta p{color:rgba(255,255,255,.85);margin:0 0 1.6rem;font-size:1rem}
-.sol-endcta__btn{display:inline-block;font-family:'Montserrat',sans-serif;font-weight:800;font-size:1rem;color:#fff;background:linear-gradient(100deg,#F47B20,#D32017);padding:1rem 2.2rem;border-radius:10px;text-decoration:none;box-shadow:0 10px 24px rgba(211,32,23,.35);transition:transform .12s ease}
-.sol-endcta__btn:hover{transform:translateY(-2px)}
-.sol-endcta__phone{display:block;margin:1.1rem 0 0!important;font-size:.92rem;color:rgba(255,255,255,.75)}
-.sol-endcta__phone a{color:#fff;font-weight:700;text-decoration:none}
-.sol-endcta__phone a:hover{text-decoration:underline}
-/* leave room for the sticky bar so it doesn't cover the button on mobile */
-@media(max-width:900px){.sol-endcta{padding-bottom:calc(clamp(48px,7vw,72px) + 60px)}}
 
 /* Optional photo upload on the quote form */
 .filedrop{display:flex;flex-direction:column;align-items:center;gap:.3rem;padding:1.15rem 1rem;border:2px dashed var(--line);border-radius:12px;cursor:pointer;text-align:center;transition:border-color .15s,background .15s}
@@ -955,83 +1176,77 @@ img{max-width:100%;height:auto;display:block}
 html[data-theme="dark"] .filelist li,
 html:not([data-theme="light"]) .filelist li{background:var(--surface-2);border-color:var(--line)}
 
-/* ===== Solutions page — dark mode =====================================
-   These components are declared after the main dark-mode block, so their
-   light-mode values were winning on source order and leaving near-white
-   text on white cards. Declared last here so the override is reliable. */
-@media (prefers-color-scheme: dark){
-  .sol__card,.sol__note,.sol__product{background:var(--surface-2)!important;border-color:var(--line)!important}
-  .sol__card h3,.sol__note h3,.sol__product h3{color:var(--ink)!important}
-  .sol__card p,.sol__note p,.sol__product p{color:var(--muted)!important}
-  .sol__list{color:var(--muted)}
-  .sol__label{color:var(--ink)}
-  .sol__eyebrow{color:#9CC6FF}
-  .sol__elec{color:var(--muted);border-left-color:var(--line)}
-  .sol__product{border-top-color:#9CC6FF}
-  .sol__card--accent{border-left-color:var(--orange-500)}
-  .sol__tag{color:var(--orange-400)}
-  .brands-row span,.sol-other-links a{background:var(--surface-2);border-color:var(--line);color:var(--ink)}
+/* Orange CTA buttons keep white text in dark mode. Most are <a> tags, so
+   they were inheriting the dark-mode link colour and rendering pale blue
+   on orange, which read poorly and looked off-brand. */
+html[data-theme="dark"] .btn--hot,
+html:not([data-theme="light"]) .btn--hot,
+html[data-theme="dark"] a.btn--hot,
+html:not([data-theme="light"]) a.btn--hot{color:#fff}
+
+/* "View all solutions" spans the card grid, matching the width of the
+   "Get this special" buttons in the specials section below it. */
+.sol__cta--wide{margin-top:1.4rem}
+/* Match the card grid so the button lines up with a card column:
+   3 columns above 900px, 2 from 681-900px, full width below. */
+.sol__cta--wide .btn{width:calc((100% - 2.4rem) / 3);max-width:none;justify-content:center}
+@media(max-width:900px){
+  .sol__cta--wide .btn{width:calc((100% - 1.2rem) / 2)}
+}
+@media(max-width:680px){
+  .sol__cta--wide .btn{width:100%}
 }
 
-/* "New version available" banner */
-.update-bar{
-  position:fixed;left:50%;bottom:18px;transform:translateX(-50%) translateY(140%);
-  z-index:200;display:flex;align-items:center;gap:1rem;
-  background:var(--ink);color:#fff;border-radius:999px;
-  padding:.7rem .7rem .7rem 1.1rem;box-shadow:0 14px 34px rgba(3,12,36,.35);
-  font-size:.92rem;max-width:calc(100% - 32px);
-  transition:transform .4s cubic-bezier(.2,.8,.2,1);
+/* Install-as-app button — only shown when the browser actually offers it */
+.installbtn{
+  display:none;align-items:center;gap:.45rem;
+  font-family:"Montserrat",sans-serif;font-weight:700;font-size:.8rem;
+  color:var(--blue-800);background:#fff;border:2px solid var(--line);
+  border-radius:999px;padding:.4rem .9rem;cursor:pointer;flex:0 0 auto;
+  transition:background .18s,border-color .18s;
 }
-.update-bar.is-visible{transform:translateX(-50%) translateY(0)}
-.update-bar span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.update-bar button{
-  flex:0 0 auto;background:var(--orange-500);color:#fff;border:0;border-radius:999px;
-  font-family:"Montserrat",sans-serif;font-weight:700;font-size:.86rem;
-  padding:.5rem 1rem;cursor:pointer;transition:background .2s;
-}
-.update-bar button:hover{background:var(--orange-400)}
-
-/* ===== Mobile nav panel — dark mode ==================================
-   The open menu kept a near-white background while the links went light,
-   leaving the items almost invisible with the page showing through. */
+.installbtn.is-ready{display:inline-flex}
+.installbtn:hover{background:var(--blue-800);border-color:var(--blue-800);color:#fff}
+.installbtn svg{width:14px;height:14px;fill:currentColor}
+@media(max-width:980px){.installbtn{font-size:.72rem;padding:.32rem .7rem}}
 @media (prefers-color-scheme: dark){
-  .nav.is-open{
-    background:#111B2C!important;
-    border-bottom-color:#22314C!important;
-    box-shadow:0 18px 32px rgba(0,0,0,.6)!important;
-  }
-  .nav.is-open > a,
-  .nav.is-open > .nav__drop > .nav__drop-btn{color:#E9EFF7!important}
-  .nav > a,.nav > .nav__drop{border-bottom-color:#22314C!important}
-  .nav__panel{background:#111B2C!important;border-color:#22314C!important}
-  .nav__panel a{color:#E9EFF7!important}
-  .nav__panel-back{color:#9CC6FF!important;border-bottom-color:#22314C!important}
+  .installbtn{background:transparent;color:#9CC6FF;border-color:var(--line)}
 }
 
-/* Mobile menu in dark mode — the open nav kept a near-white background while
-   the links went light, leaving the menu unreadable with page content
-   showing through. Declared last so it isn't overridden by source order. */
-@media (prefers-color-scheme: dark){
-  .nav.is-open{background:#111B2C!important;border-bottom-color:var(--line)!important;box-shadow:0 18px 32px rgba(0,0,0,.6)!important}
-  .nav.is-open a,.nav.is-open .nav__drop-btn{color:#E9EFF7!important}
-  .nav > a,.nav > .nav__drop{border-bottom-color:var(--line)!important}
-  .nav__panel{background:#111B2C!important;border-color:var(--line)!important}
-  .nav__panel a{color:#E9EFF7!important}
-  .nav__panel-back{color:#9CC6FF!important}
+/* Banner typography — the strip, countdown and CTA were running at three
+   different sizes across two fonts, which read as inconsistent. Aligned to
+   one family and size; the clock keeps tabular figures so the seconds
+   don't jitter as they tick. */
+.giveaway-carousel__clock{
+  font-family:"Montserrat",sans-serif!important;
+  font-size:.86rem!important;font-weight:700!important;
+  font-variant-numeric:tabular-nums;
+}
+.giveaway-carousel__cta{font-size:.86rem;font-weight:700}
+/* One size for the whole line — mixing sizes inside a single sentence
+   read as a mistake rather than emphasis. */
+.giveaway-carousel__strip{font-size:.8rem;font-weight:700}
+.giveaway-carousel__strip b{font-size:inherit;font-weight:700}
+@media(max-width:780px){
+  .giveaway-carousel__clock{font-size:.66rem!important}
+  .giveaway-carousel__cta{font-size:.72rem}
+  .giveaway-carousel__strip{font-size:.7rem}
+  .giveaway-carousel__strip b{font-size:inherit}
+}
+@media(max-width:520px){
+  .giveaway-carousel__clock{font-size:.6rem!important}
+  .giveaway-carousel__cta{font-size:.64rem}
+  .giveaway-carousel__strip{font-size:.64rem}
+  .giveaway-carousel__strip b{font-size:inherit}
 }
 
-/* The open mobile menu kept a white background in dark mode while the link
-   text went light — leaving the items nearly invisible with page content
-   showing through. */
-@media (prefers-color-scheme: dark){
-  .nav.is-open{background:var(--surface-2)!important;border-bottom-color:var(--line)!important}
-  .nav a,.nav__drop-btn{color:var(--ink)!important}
-  .nav__panel{background:var(--surface-2)!important;border-color:var(--line)!important}
-  .nav__panel a{color:var(--ink)!important}
-  .nav__panel-back{color:#9CC6FF!important}
-  .nav > a,.nav > .nav__drop{border-bottom-color:var(--line)!important}
+/* "Local experts" reads as an orphaned left column on laptop/desktop since
+   it has no second column beside it — centre and cap its width instead. */
+@media(min-width:901px){
+  .about{justify-items:center;text-align:center}
+  .about > div{max-width:74ch}
+  .about .brands{justify-content:center}
 }
-/* mobile nav must be dark — marker */
 
 /* "Install app" sits in the menu rather than the header bar — browsers bury
    their own install prompt, and the header had no room for another button.
@@ -1041,73 +1256,27 @@ html:not([data-theme="light"]) .filelist li{background:var(--surface-2);border-c
 @media(max-width:980px){.nav__install.is-ready{display:block!important;width:100%;text-align:center}}
 @media (prefers-color-scheme: dark){.nav__install{color:#9CC6FF!important}}
 
-/* Promo banner (shared with the homepage) */
-.giveaway-carousel{color:#fff;transition:background .5s ease;position:sticky;top:72px;z-index:49}
-.giveaway-carousel{top:70px}
-.giveaway-carousel[data-scheme="orange"]{background:linear-gradient(100deg,var(--red-600),var(--orange-500))}
-.giveaway-carousel[data-scheme="blue"]{background:linear-gradient(100deg,var(--blue-900),var(--blue-600))}
-.giveaway-carousel__inner{display:flex;align-items:center;justify-content:center;gap:1.4rem;flex-wrap:nowrap;padding:.5rem 22px;text-align:center;min-height:0}
-.giveaway-carousel__viewport{flex:1 1 auto;min-width:0;overflow:hidden}
-.giveaway-carousel__marquee{display:flex;width:max-content;will-change:transform;animation:giveawayMarquee 38s linear infinite}
-.giveaway-carousel:hover .giveaway-carousel__marquee{animation-play-state:paused}
-.giveaway-carousel__strip{
-  display:inline-flex;align-items:center;flex:0 0 auto;white-space:nowrap;
-  font-family:"Montserrat",sans-serif;font-weight:600;font-size:.98rem;line-height:1;
-}
-.giveaway-carousel__strip{font-weight:700}
-.giveaway-carousel__strip b{font-weight:700}
-.giveaway-carousel__sep{display:inline-block;width:4.5rem}
-.giveaway-carousel__marquee{animation:none}
-.giveaway-carousel__cta{font-family:"Montserrat",sans-serif;font-weight:800;font-size:.9rem;color:var(--red-600);background:#fff;text-decoration:none;white-space:nowrap;flex:0 0 auto;padding:.42rem 1.05rem;border-radius:999px;box-shadow:0 3px 10px rgba(0,0,0,.22);transition:transform .15s ease,box-shadow .15s ease;animation:ctaFlash 1.6s ease-in-out infinite}
-.giveaway-carousel__cta{animation:none}
-.giveaway-carousel__cta:hover{transform:translateY(-1px);box-shadow:0 5px 14px rgba(0,0,0,.28)}
-.giveaway-carousel[data-scheme="blue"] .giveaway-carousel__cta{background:linear-gradient(100deg,#F47B20,#D32017);color:#fff}
-.giveaway-carousel.is-hidden{display:none}
-  .giveaway-carousel__inner{padding:.42rem 10px;gap:.6rem}
-  .giveaway-carousel__strip{font-size:.8rem}
-  .giveaway-carousel__cta{font-size:.8rem;padding:.38rem .75rem}
-  .giveaway-carousel__strip{font-size:.72rem}
-  .giveaway-carousel__cta{font-size:.72rem;padding:.34rem .65rem}
-  .giveaway-carousel__inner{gap:.4rem}
-  .giveaway-carousel__strip{font-size:.66rem}
-  .giveaway-carousel__cta{font-size:.66rem;padding:.3rem .55rem}
-.giveaway-carousel__clock{
-  flex:0 0 auto;display:inline-flex;align-items:center;gap:.25rem;
-  font-family:"Barlow",monospace;font-weight:700;font-size:.76rem;
-  color:#fff;background:rgba(0,0,0,.2);
-  border:1px solid rgba(255,255,255,.3);border-radius:999px;
-  padding:.2rem .55rem;white-space:nowrap;letter-spacing:.01em;
-}
-.giveaway-carousel__clock{font-size:.66rem;padding:.16rem .4rem}
-.giveaway-carousel__clock{font-size:.6rem;padding:.14rem .32rem;gap:.15rem}
-.giveaway-carousel__clock{font-size:.55rem;padding:.12rem .28rem}
-  .giveaway-carousel__cta{background:#1A5FCB;color:#fff;box-shadow:0 3px 10px rgba(0,0,0,.35)}
-  .giveaway-carousel[data-scheme="blue"] .giveaway-carousel__cta{background:linear-gradient(100deg,#F47B20,#D32017);color:#fff}
-  html:not([data-theme="dark"]) .giveaway-carousel__cta{background:#fff;color:var(--red-600);box-shadow:0 3px 10px rgba(0,0,0,.22)}
-.giveaway-carousel__clock{
-  font-family:"Montserrat",sans-serif!important;
-  font-size:.86rem!important;font-weight:700!important;
-  font-variant-numeric:tabular-nums;
-}
-.giveaway-carousel__cta{font-size:.86rem;font-weight:700}
-.giveaway-carousel__strip{font-size:.8rem;font-weight:700}
-.giveaway-carousel__strip b{font-size:inherit;font-weight:700}
-  .giveaway-carousel__clock{font-size:.66rem!important}
-  .giveaway-carousel__cta{font-size:.72rem}
-  .giveaway-carousel__strip{font-size:.7rem}
-  .giveaway-carousel__strip b{font-size:inherit}
-  .giveaway-carousel__clock{font-size:.6rem!important}
-  .giveaway-carousel__cta{font-size:.64rem}
-  .giveaway-carousel__strip{font-size:.64rem}
-  .giveaway-carousel__strip b{font-size:inherit}
+/* On phones the timer pill and CTA were taking most of the bar, leaving the
+   message about 180px of a 390px screen — it read as cramped and oddly sized.
+   Slim both so the scrolling message gets the room it needs. */
+@media(max-width:560px){
   .giveaway-carousel__inner{gap:.5rem;padding-left:12px;padding-right:12px}
   .giveaway-carousel__clock{font-size:.62rem!important;padding:.12rem .38rem!important;gap:.12rem}
   .giveaway-carousel__cta{font-size:.68rem;padding:.3rem .6rem}
   .giveaway-carousel__strip{font-size:.76rem}
+}
+@media(max-width:400px){
   .giveaway-carousel__inner{gap:.38rem;padding-left:10px;padding-right:10px}
   .giveaway-carousel__clock{font-size:.58rem!important;padding:.1rem .3rem!important}
   .giveaway-carousel__cta{font-size:.62rem;padding:.26rem .5rem}
   .giveaway-carousel__strip{font-size:.72rem}
+}
+
+/* iOS Safari was substituting a different face for part of the line, so the
+   two halves rendered at visibly different sizes. Pin the family, size and
+   weight on the bold element and disable Safari's text auto-sizing, which
+   also inflates runs of text independently. */
+/* the strip keeps its own responsive size; children inherit it exactly */
 .giveaway-carousel__strip{
   font-family:"Montserrat","Helvetica Neue",Arial,sans-serif!important;
   font-weight:700!important;
@@ -1120,21 +1289,6 @@ html:not([data-theme="light"]) .filelist li{background:var(--surface-2);border-c
   font-size:inherit!important;
   font-weight:inherit!important;
   font-style:normal!important;
-}
-    var sep = '<span class="giveaway-carousel__sep"></span>';
-    var html = '';
-    for (var i = 0; i < messages.length; i++) {
-      var m = messages[i];
-      html += (typeof m === 'function' ? m() : m) + sep;
-    }
-@media(max-width:1023px){.giveaway-carousel{top:70px}}
-@media(prefers-reduced-motion:reduce){.giveaway-carousel__marquee{animation:none}}
-@media(prefers-reduced-motion:reduce){.giveaway-carousel__cta{animation:none}}
-@media(max-width:780px){.giveaway-carousel__clock{font-size:.66rem;padding:.16rem .4rem}}
-@media(max-width:520px){.giveaway-carousel__clock{font-size:.6rem;padding:.14rem .32rem;gap:.15rem}}
-@media(max-width:400px){.giveaway-carousel__clock{font-size:.55rem;padding:.12rem .28rem}}
-@media (prefers-color-scheme: light){
-  html:not([data-theme="dark"]) .giveaway-carousel__cta{background:#fff;color:var(--red-600);box-shadow:0 3px 10px rgba(0,0,0,.22)}
 }
 
 /* The phone icon is a mobile convenience — on desktop the number is in the
@@ -1144,170 +1298,7 @@ html:not([data-theme="light"]) .filelist li{background:var(--surface-2);border-c
 }
 /* phone icon is mobile-only — marker */
 
-/* Promo bar — re-declared last so the homepage values win over any
-   earlier page-specific overrides, keeping the bar identical
-   across every page. */
-.giveaway-carousel{color:#fff;transition:background .5s ease;position:sticky;top:72px;z-index:49}
-
-@media(max-width:1023px){.giveaway-carousel{top:70px}}
-.giveaway-carousel[data-scheme="orange"]{background:linear-gradient(100deg,var(--red-600),var(--orange-500))}
-
-.giveaway-carousel[data-scheme="blue"]{background:linear-gradient(100deg,var(--blue-900),var(--blue-600))}
-
-.giveaway-carousel__inner{display:flex;align-items:center;justify-content:center;gap:1.4rem;flex-wrap:nowrap;padding:.5rem 22px;text-align:center;min-height:0}
-
-.giveaway-carousel__viewport{flex:1 1 auto;min-width:0;overflow:hidden}
-
-.giveaway-carousel__marquee{display:flex;width:max-content;will-change:transform;animation:giveawayMarquee 38s linear infinite}
-
-.giveaway-carousel:hover .giveaway-carousel__marquee{animation-play-state:paused}
-
-.giveaway-carousel__strip{
-  display:inline-flex;align-items:center;flex:0 0 auto;white-space:nowrap;
-  font-family:"Montserrat",sans-serif;font-weight:600;font-size:.98rem;line-height:1;
-}
-
-.giveaway-carousel__strip{font-weight:700}
-
-.giveaway-carousel__strip b{font-weight:700}
-
-.giveaway-carousel__sep{display:inline-block;width:4.5rem}
-
-@media(prefers-reduced-motion:reduce){.giveaway-carousel__marquee{animation:none}}
-.giveaway-carousel__cta{font-family:"Montserrat",sans-serif;font-weight:800;font-size:.9rem;color:var(--red-600);background:#fff;text-decoration:none;white-space:nowrap;flex:0 0 auto;padding:.42rem 1.05rem;border-radius:999px;box-shadow:0 3px 10px rgba(0,0,0,.22);transition:transform .15s ease,box-shadow .15s ease;animation:ctaFlash 1.6s ease-in-out infinite}
-
-@media(prefers-reduced-motion:reduce){.giveaway-carousel__cta{animation:none}}
-.giveaway-carousel__cta:hover{transform:translateY(-1px);box-shadow:0 5px 14px rgba(0,0,0,.28)}
-
-.giveaway-carousel[data-scheme="blue"] .giveaway-carousel__cta{background:linear-gradient(100deg,#F47B20,#D32017);color:#fff}
-
-.giveaway-carousel.is-hidden{display:none}
-
-@media(max-width:640px){
-  .giveaway-carousel__inner{padding:.42rem 10px;gap:.6rem}
-  
-.giveaway-carousel__strip{font-size:.8rem}
-  
-.giveaway-carousel__cta{font-size:.8rem;padding:.38rem .75rem}
-}
-@media(max-width:360px){
-  .giveaway-carousel__strip{font-size:.72rem}
-  
-.giveaway-carousel__cta{font-size:.72rem;padding:.34rem .65rem}
-}
-@media(max-width:330px){
-  .giveaway-carousel__inner{gap:.4rem}
-  
-.giveaway-carousel__strip{font-size:.66rem}
-  
-.giveaway-carousel__cta{font-size:.66rem;padding:.3rem .55rem}
-}
-.giveaway-carousel__clock{
-  flex:0 0 auto;display:inline-flex;align-items:center;gap:.25rem;
-  font-family:"Barlow",monospace;font-weight:700;font-size:.76rem;
-  color:#fff;background:rgba(0,0,0,.2);
-  border:1px solid rgba(255,255,255,.3);border-radius:999px;
-  padding:.2rem .55rem;white-space:nowrap;letter-spacing:.01em;
-}
-
-@media(max-width:780px){.giveaway-carousel__clock{font-size:.66rem;padding:.16rem .4rem}}
-@media(max-width:520px){.giveaway-carousel__clock{font-size:.6rem;padding:.14rem .32rem;gap:.15rem}}
-@media(max-width:400px){.giveaway-carousel__clock{font-size:.55rem;padding:.12rem .28rem}}
-@media (prefers-color-scheme: dark){
-  .giveaway-carousel__cta{background:#1A5FCB;color:#fff;box-shadow:0 3px 10px rgba(0,0,0,.35)}
-  
-.giveaway-carousel[data-scheme="blue"] .giveaway-carousel__cta{background:linear-gradient(100deg,#F47B20,#D32017);color:#fff}
-}
-@media (prefers-color-scheme: light){
-  html:not([data-theme="dark"]) .giveaway-carousel__cta{background:#fff;color:var(--red-600);box-shadow:0 3px 10px rgba(0,0,0,.22)}
-}
-.giveaway-carousel__clock{
-  font-family:"Montserrat",sans-serif!important;
-  font-size:.86rem!important;font-weight:700!important;
-  font-variant-numeric:tabular-nums;
-}
-
-.giveaway-carousel__cta{font-size:.86rem;font-weight:700}
-
-.giveaway-carousel__strip{font-size:.8rem;font-weight:700}
-
-.giveaway-carousel__strip b{font-size:inherit;font-weight:700}
-
-@media(max-width:780px){
-  .giveaway-carousel__clock{font-size:.66rem!important}
-  
-.giveaway-carousel__cta{font-size:.72rem}
-  
-.giveaway-carousel__strip{font-size:.7rem}
-  
-.giveaway-carousel__strip b{font-size:inherit}
-}
-@media(max-width:520px){
-  .giveaway-carousel__clock{font-size:.6rem!important}
-  
-.giveaway-carousel__cta{font-size:.64rem}
-  
-.giveaway-carousel__strip{font-size:.64rem}
-  
-.giveaway-carousel__strip b{font-size:inherit}
-}
-@media(max-width:560px){
-  .giveaway-carousel__inner{gap:.5rem;padding-left:12px;padding-right:12px}
-  
-.giveaway-carousel__clock{font-size:.62rem!important;padding:.12rem .38rem!important;gap:.12rem}
-  
-.giveaway-carousel__cta{font-size:.68rem;padding:.3rem .6rem}
-  
-.giveaway-carousel__strip{font-size:.76rem}
-}
-@media(max-width:400px){
-  .giveaway-carousel__inner{gap:.38rem;padding-left:10px;padding-right:10px}
-  
-.giveaway-carousel__clock{font-size:.58rem!important;padding:.1rem .3rem!important}
-  
-.giveaway-carousel__cta{font-size:.62rem;padding:.26rem .5rem}
-  
-.giveaway-carousel__strip{font-size:.72rem}
-}
-.giveaway-carousel__strip{
-  font-family:"Montserrat","Helvetica Neue",Arial,sans-serif!important;
-  font-weight:700!important;
-  -webkit-text-size-adjust:100%!important;
-  text-size-adjust:100%!important;
-}
-
-.giveaway-carousel__strip b,
-.giveaway-carousel__strip span{
-  font-family:inherit!important;
-  font-size:inherit!important;
-  font-weight:inherit!important;
-  font-style:normal!important;
-}
-
-
-    var sep = '<span class="giveaway-carousel__sep"></span>';
-    var html = '';
-    for (var i = 0; i < messages.length; i++) {
-      var m = messages[i];
-      html += (typeof m === 'function' ? m() : m) + sep;
-    }
-    
-/* About used a narrower content width than the rest of the site */
-:root{ --wrap:1180px; }
-
-/* Pin the pill and button geometry to the homepage values — page CSS
-   was giving them different padding, so the bar sat shorter. */
-.giveaway-carousel .giveaway-carousel__cta{font-family:"Montserrat",sans-serif;font-weight:800;font-size:.9rem;color:var(--red-600);background:#fff;text-decoration:none;white-space:nowrap;flex:0 0 auto;padding:.42rem 1.05rem;border-radius:999px;box-shadow:0 3px 10px rgba(0,0,0,.22);transition:transform .15s ease,box-shadow .15s ease;animation:ctaFlash 1.6s ease-in-out infinite}
-.giveaway-carousel .giveaway-carousel__clock{
-  flex:0 0 auto;display:inline-flex;align-items:center;gap:.25rem;
-  font-family:"Barlow",monospace;font-weight:700;font-size:.76rem;
-  color:#fff;background:rgba(0,0,0,.2);
-  border:1px solid rgba(255,255,255,.3);border-radius:999px;
-  padding:.2rem .55rem;white-space:nowrap;letter-spacing:.01em;
-}
-
-/* Page-level link/button styles kept altering the pill padding, so the bar
-   rendered a few px shorter than the homepage. Fix the geometry outright. */
+/* Same fixed geometry as the subpages so the bar is identical everywhere. */
 .giveaway-carousel .giveaway-carousel__inner{min-height:36px}
 .giveaway-carousel .giveaway-carousel__cta{
   padding:.42rem 1.05rem!important;line-height:1.45!important;min-height:0!important;
@@ -1326,42 +1317,21 @@ html:not([data-theme="light"]) .filelist li{background:var(--surface-2);border-c
   .giveaway-carousel .giveaway-carousel__clock{height:22px!important;padding:0 .4rem!important}
 }
 
-/* The marquee keyframes did not come across with the banner CSS, so the
-   animation was assigned but had nothing to run. */
-@keyframes giveawayMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-
-/* The promo bar must span the same width on every page — About in particular
-   was using a 900px content wrapper, which squeezed the scrolling message
-   into far less space than the homepage. */
-.giveaway-carousel .wrap{max-width:1180px!important}
-
-/* Promo bar width — declared last, with an id selector so it beats any
-   page-specific .wrap rule (About caps body copy at 900px). */
-#giveawayCarousel .wrap{max-width:1180px!important;width:100%!important}
-#giveawayCarousel .giveaway-carousel__viewport{flex:1 1 auto!important}
-</style>
-<style>
-  .sol-page-hero{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--blue-900),var(--blue-800) 60%,var(--blue-600));color:#fff;padding:clamp(46px,7vw,78px) 0 clamp(52px,8vw,84px);text-align:center}
-  .sol-page-hero__decor{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.1) 2px,transparent 2px);background-size:32px 32px;opacity:.5;pointer-events:none}
-  .sol-page-hero__inner{position:relative}
-  .sol-page-hero h1{font-size:clamp(1.9rem,4.6vw,2.7rem);color:#fff;margin:0 0 .7rem;line-height:1.12}
-  .sol-page-hero p{font-size:1.06rem;color:rgba(255,255,255,.92);max-width:62ch;margin:0 auto;line-height:1.6}
-  .sol-jump{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin-top:1.6rem}
-  .sol-jump a{font-family:"Montserrat",sans-serif;font-weight:700;font-size:.82rem;color:#fff;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:.45rem 1.05rem;text-decoration:none;transition:background .18s}
-  .sol-jump a:hover{background:rgba(255,255,255,.26)}
-
-/* Promo bar spans the full site width on every page (About caps its body
-   .wrap at 900px, which was squeezing the scrolling message). */
-#giveawayCarousel .wrap{max-width:1180px!important;width:100%!important}
-
 /* ===== Critical chrome fixes (also in shared.css) ====================
    Duplicated inline so the page still renders correctly if shared.css
    is unavailable — e.g. previewing this file on its own. */
 .nav a,.nav__drop-btn{line-height:1.65!important;display:inline-flex;align-items:center}
 .nav__drop-btn{padding-top:.3rem;padding-bottom:.3rem}
-@media(min-width:981px){
+/* The hero is two columns from 901px up, not 981px — the old breakpoint
+   left the card sitting below the AC unit between those widths. */
+/* The card starts level with the AC unit and finishes level with the two
+   hero buttons — matching the visible content on the left rather than the
+   full column, which ran past them. Height is set in JS (see below) because
+   the left column's height depends on how the copy wraps. */
+@media(min-width:901px){
   .hero__inner{align-items:start}
-  .hero__card{margin-top:0}
+  .hero__card{margin-top:0;display:flex;flex-direction:column}
+  .hero__card ul{flex:1 1 auto}
 }
 .about-story h2,.why-us__head h2,.why-us__card h3{color:var(--ink)}
 .about-story p,.why-us__head p,.why-us__card p,.stat-item span{color:var(--muted)}
@@ -1395,9 +1365,37 @@ html:not([data-theme="light"]) .filelist li{background:var(--surface-2);border-c
   }
 }
 
+/* "Local experts" block was centred internally but the block itself sat
+   left of the page — it has a max-width with no auto margins. */
+@media(min-width:901px){
+  .about{margin-left:auto!important;margin-right:auto!important;text-align:center}
+  .about .brands,.about .cards{justify-content:center}
+}
+
+/* "Comfort now. Pay your way." sat as a left-aligned two-column block while
+   the sections around it are centred. Centre it to match. */
+@media(min-width:901px){
+  .finance{
+    grid-template-columns:1fr!important;
+    justify-items:center;text-align:center;
+    max-width:70ch;margin-left:auto!important;margin-right:auto!important;
+    gap:1.6rem!important;
+  }
+  .finance .cards{justify-content:center}
+  .finance .btn{justify-self:center}
+}
+
 /* The promo bar's sticky offset (72px) was larger than the header's actual
    height on tablet and mobile (65px), leaving a strip of page showing
    between the two as you scroll. Match the offset to the real height. */
+
+/* Solutions heading and lede sat left while the card grid spans the full
+   width — centre them so the block reads as one centred section. */
+@media(min-width:901px){
+  #solutions .head{text-align:center;max-width:70ch;margin-left:auto;margin-right:auto}
+  #solutions .head .lede{margin-left:auto;margin-right:auto}
+  #solutions .sol__cta{justify-content:center}
+}
 
 /* Brand pills kept a white background in dark mode while the text went
    light, leaving white-on-white. Give them the dark surface instead. */
@@ -1420,6 +1418,16 @@ html:not([data-theme="light"]) .filelist li{background:var(--surface-2);border-c
   box-shadow:0 6px 18px rgba(15,26,46,.28)!important;
 }
 
+/* Seven cards in a three-column grid leaves the last one stranded on the
+   left of its own row. Centre it when it's alone. */
+@media(min-width:901px){
+  .sol__cards--3 > .sol__link:last-child:nth-child(3n+1){grid-column:2}
+}
+@media(min-width:681px) and (max-width:900px){
+  /* two columns at this size — an odd last card ends up alone again */
+  .sol__cards--3 > .sol__link:last-child:nth-child(2n+1){grid-column:1 / -1;max-width:calc(50% - .6rem);justify-self:center}
+}
+
 /* Brand gradient restored (orange into red). The red *glow* behind the
    button is what was removed — the shadow is neutral, with a subtle inner
    highlight so the button still reads as embossed. */
@@ -1433,6 +1441,11 @@ html:not([data-theme="light"]) .filelist li{background:var(--surface-2);border-c
   box-shadow:0 6px 18px rgba(15,26,46,.30),
              inset 0 1px 0 rgba(255,255,255,.34)!important;
 }
+
+/* Section headings sat left while the content below them is centred —
+   centre the Specials heading and its lede to match. */
+#offers .head{text-align:center;max-width:70ch;margin-left:auto;margin-right:auto}
+#offers .head .lede{margin-left:auto;margin-right:auto}
 
 /* Gradient stays within the orange family — the previous orange-to-red ramp
    left a visibly red edge that read as a second colour. */
@@ -1449,6 +1462,12 @@ button.btn--hot,
   background-image:linear-gradient(100deg,#F98A2E,#E03226)!important;
 }
 
+/* Ratings and trust marks now sit below both hero columns, centred, rather
+   than tucked under the left column only. */
+.hero__marks{grid-column:1 / -1;justify-self:center;text-align:center;width:100%;max-width:860px}
+.hero__marks .hero__stars{justify-content:center}
+.hero__marks-row{justify-content:center}
+
 /* The button carries a 2px transparent border. With background-clip at its
    default (border-box) the solid fill paints under that border and shows as
    a darker strip down the left edge. Clip to the padding box and drop the
@@ -1464,33 +1483,34 @@ button.btn--hot{
   background-color:transparent!important;
   background-clip:border-box!important;
 }
+
+/* Reviews heading and its Google link sit centred over the review cards. */
+.head--centred{text-align:center;max-width:70ch;margin-left:auto;margin-right:auto}
+.revs__link--centred{text-align:center}
+
+/* The reviews carousel has a max-width but no auto margins, so it sat left
+   under a centred heading. Centre the block and its text. */
+.revs{margin-left:auto!important;margin-right:auto!important}
+.rev{border-left:0;border-top:4px solid var(--orange-500);padding:1rem 1.2rem 0;text-align:center}
+.rev__who,.rev__meta{text-align:center}
+
+/* Carousel controls centre with the reviews they belong to. */
+.revs__nav{justify-content:center;padding-left:0!important}
+
+/* Lift the ratings/trust marks clear of the decorative wave at the foot of
+   the hero — they were overlapping it, especially on mobile. */
+.hero__marks{margin-top:1.4rem!important;margin-bottom:clamp(56px,9vw,96px)}
+@media(max-width:900px){
+  .hero__marks{margin-top:1rem!important;margin-bottom:clamp(120px,26vw,190px)}
+}
 </style>
 <link rel="stylesheet" href="shared.css">
-<meta name="app-version" content="delta-air-v64">
-<link rel="canonical" href="https://deltaair.co.nz/solutions.html">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Delta Air Solutions">
-<meta property="og:locale" content="en_NZ">
-<meta property="og:title" content="HVAC Solutions — Heat Pumps, Ducted, Ventilation | Delta Air Solutions">
-<meta property="og:description" content="Heat pumps, ducted heating and cooling, multi-room systems, ventilation, zoning and commercial HVAC across Auckland and Waikato. Retrofit and new build specialists.">
-<meta property="og:url" content="https://deltaair.co.nz/solutions.html">
-<meta property="og:image" content="https://deltaair.co.nz/icon-512.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="HVAC Solutions — Heat Pumps, Ducted, Ventilation | Delta Air Solutions">
-<meta name="twitter:description" content="Heat pumps, ducted heating and cooling, multi-room systems, ventilation, zoning and commercial HVAC across Auckland and Waikato. Retrofit and new build specialists.">
-<meta name="twitter:image" content="https://deltaair.co.nz/icon-512.png">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HVACBusiness", "@id": "https://deltaair.co.nz/#business", "name": "Delta Air Solutions Ltd", "url": "https://deltaair.co.nz", "telephone": "+64800247888", "email": "deltaairnz@gmail.com", "image": "https://deltaair.co.nz/icon-512.png", "priceRange": "$$", "address": {"@type": "PostalAddress", "addressLocality": "Gordonton", "addressRegion": "Waikato", "addressCountry": "NZ"}, "areaServed": [{"@type": "Place", "name": "Auckland"}, {"@type": "Place", "name": "Waikato"}, {"@type": "Place", "name": "Hamilton"}], "sameAs": ["https://www.facebook.com/share/1Ewu4qPWee/", "https://www.instagram.com/deltaairnz"]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Heat Pumps"}, {"@type": "ListItem", "position": 2, "name": "Ducted Heating & Cooling"}, {"@type": "ListItem", "position": 3, "name": "Multi-Room Systems"}, {"@type": "ListItem", "position": 4, "name": "Ventilation"}, {"@type": "ListItem", "position": 5, "name": "Zoning & Smart Controls"}, {"@type": "ListItem", "position": 6, "name": "Commercial HVAC"}, {"@type": "ListItem", "position": 7, "name": "Service & Maintenance"}]}</script>
 </head>
 <body>
-<div class="update-bar" id="updateBar" role="status" aria-live="polite">
-  <span>A new version of this site is available.</span>
-  <button type="button" id="updateBarBtn">Refresh</button>
-</div>
 
 <header class="header">
   <div class="header__bar">
-    <a class="brand" href="index.html" aria-label="Delta Air Solutions — home">
+    <a class="brand" href="#top" aria-label="Delta Air Solutions — home">
       <span class="brand__logo" role="img" aria-label="Delta Air Solutions — Quality HVAC Solutions"></span>
     </a>
     <nav class="nav" id="nav">
@@ -1514,7 +1534,7 @@ button.btn--hot{
           <a href="solutions.html#service-maintenance">Service &amp; Maintenance</a>
         </div>
       </div>
-      <a href="index.html#offers">Specials</a>
+      <a href="#offers">Specials</a>
       <a href="about.html">About us</a>
       <a href="#contact">Contact</a>
       <a href="#" class="nav__install" id="installBtn" hidden>⬇ Install app</a>
@@ -1544,422 +1564,463 @@ button.btn--hot{
   </div>
 </div>
 
-
 <main id="top">
 
-<section class="sol-page-hero">
-  <div class="sol-page-hero__decor" aria-hidden="true"></div>
-  <div class="wrap sol-page-hero__inner">
-    <h1>Our Solutions</h1>
-    <p>Heating, cooling and ventilation for homes and businesses across Auckland and Waikato — designed around your property, for both retrofit and new builds.</p>
-    <nav class="sol-jump" aria-label="Jump to a solution">
-      <a href="#heat-pumps">1. Heat Pumps</a>
-      <a href="#ducted-heating-cooling">2. Ducted Heating &amp; Cooling</a>
-      <a href="#multi-room-systems">3. Multi-Room Systems</a>
-      <a href="#ventilation">4. Ventilation</a>
-      <a href="#zoning-smart-controls">5. Zoning &amp; Smart Controls</a>
-      <a href="#commercial-hvac">6. Commercial HVAC</a>
-      <a href="#service-maintenance">7. Service &amp; Maintenance</a>
-    </nav>
+  <section class="hero" data-mode="cooling">
+    <div class="hero__grad hero__grad--cool"></div>
+    <div class="hero__grad hero__grad--warm"></div>
+    <div class="hero__wave" aria-hidden="true"></div>
+
+    <div class="wrap">
+      <div class="hero__inner">
+        <div>
+          <div class="hpunit-mount">
+            <div class="hpunit">
+            <div class="toggle" role="group" aria-label="Heating or cooling">
+              <div class="toggle__row toggle__row--all">
+                <button type="button" class="toggle__power" id="hpPower" aria-pressed="true" title="Turn the unit on or off">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M7.5 5.5a8 8 0 1 0 9 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  <em id="hpPowerLabel">ON</em>
+                </button>
+                <span class="toggle__div" aria-hidden="true"></span>
+                <span class="toggle__stat" id="hpTemp" title="Current outside temperature">
+                  <i>Outside</i><b><span id="hpTempVal">--</span>°C</b>
+                </span>
+                <span class="toggle__div" aria-hidden="true"></span>
+                <span class="toggle__stat toggle__stat--room">
+                  <i>Room</i>
+                  <span class="toggle__temp-ctrl">
+                    <button type="button" class="toggle__step" id="hpRoomDown" aria-label="Lower room target temperature">−</button>
+                    <b><span id="hpRoomVal">21</span>°C</b>
+                    <button type="button" class="toggle__step" id="hpRoomUp" aria-label="Raise room target temperature">+</button>
+                  </span>
+                </span>
+                <span class="toggle__div" aria-hidden="true"></span>
+                <button type="button" class="toggle__mode" data-mode="cooling" aria-pressed="true" title="Cooling" aria-label="Cooling">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M3.5 7l17 10M20.5 7l-17 10M12 6.4 9.4 4M12 6.4 14.6 4M12 17.6 9.4 20M12 17.6l2.6 2.4M5.6 9.9 2.4 9.2M7.9 15.6l-3.2 2M18.4 14.1l3.2.7M16.1 8.4l3.2-2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><em>COOL</em>
+                </button>
+                <span class="toggle__div" aria-hidden="true"></span>
+                <button type="button" class="toggle__mode" data-mode="heating" aria-pressed="false" title="Heating" aria-label="Heating">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v3M12 20v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M1 12h3M20 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/></svg><em>HEAT</em>
+                </button>
+              </div>
+              <div class="hpunit__hint" id="hpHint" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 19V6M12 6l-5 5M12 6l5 5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <!-- Three lengths; CSS shows whichever suits the unit's current width -->
+                <span class="hpunit__hint-full">Your comfort is one step away</span>
+                <span class="hpunit__hint-mid">Comfort, one step away</span>
+                <span class="hpunit__hint-short">Give it a tap</span>
+              </div>
+            </div>
+
+            <span class="hpunit__logo" aria-label="Daikin">
+              <svg viewBox="0 0 132 26" aria-hidden="true">
+                <!-- Triangular mark: black upper-left wedge over a light blue triangle -->
+                <path d="M2 2 H34 L10 26 Z" fill="#71C0EB"/>
+                <path d="M2 2 H22 L2 18 Z" fill="#0B0B0B"/>
+                <text x="38" y="21" font-family="Montserrat, Arial, sans-serif" font-size="21" font-weight="800" font-style="italic" fill="#4194DA" letter-spacing="-0.5">DAIKIN</text>
+              </svg>
+            </span>
+            <span class="hpunit__vent" aria-hidden="true"><span class="hpunit__flap"></span></span>
+            <svg class="hpunit__air" viewBox="0 0 520 220" aria-hidden="true">
+              <path d="M6,20 C70,-6 122,46 186,20 S302,-6 366,20 S450,46 514,20"/>
+              <path d="M6,20 C70,-6 122,46 186,20 S302,-6 366,20 S450,46 514,20"/>
+              <path d="M6,20 C70,-6 122,46 186,20 S302,-6 366,20 S450,46 514,20"/>
+              <path d="M6,20 C70,-6 122,46 186,20 S302,-6 366,20 S450,46 514,20"/>
+              <path d="M6,20 C70,-6 122,46 186,20 S302,-6 366,20 S450,46 514,20"/>
+              <path d="M6,20 C70,-6 122,46 186,20 S302,-6 366,20 S450,46 514,20"/>
+            </svg>
+          </div>
+          </div>
+          <h1>Breathe better. Live better.</h1>
+          <p class="hero__sub" id="heroSub">Daikin, Panasonic and Mitsubishi Electric heat pumps, ducted systems and home ventilation across Auckland and Waikato. New builds a speciality. Free quotes, fast install, five-year warranty.</p>
+          <div class="hero__actions">
+            <a class="btn btn--hot" href="#contact">Get your free quote</a>
+            <a class="btn btn--ghost" href="tel:0800247888">Call 0800 247 888</a>
+          </div>
+        </div>
+
+        <aside class="hero__card">
+          <div class="offer__kicker">No cost, no obligation</div>
+          <h3>Free in-home assessment</h3>
+          <p>We measure the rooms, check the ceiling space and tell you what the job actually needs.</p>
+          <ul>
+            <li><span class="tick">✓</span> Sized room by room, not guessed at</li>
+            <li><span class="tick">✓</span> Written fixed-price quote</li>
+            <li><span class="tick">✓</span> New builds and homes under construction</li>
+            <li><span class="tick">✓</span> 5-Year Manufacturer Warranty</li>
+            <li><span class="tick">✓</span> 5-Year Delta Air Workmanship Warranty</li>
+          </ul>
+          <a class="btn btn--cool" href="#contact" style="width:100%">Book my free assessment</a>
+          <p class="fine">Auckland &amp; Waikato. Call 0800 247 888 if you'd rather talk it through.</p>
+        </aside>
+
+          <div class="hero__marks">
+            <a class="hero__stars" href="https://maps.app.goo.gl/xtZ1iGaVWvUuCjAD9" target="_blank" rel="noopener">
+              <em aria-hidden="true">★★★★★</em> 5-star rated on
+              <svg class="hero__google-g" viewBox="0 0 18 18" aria-label="Google" role="img"><path fill="#4285F4" d="M17.64 9.2045c0-.6381-.0573-1.2518-.1636-1.8409H9v3.4814h4.8436c-.2086 1.125-.8427 2.0782-1.7959 2.7164v2.2581h2.9087c1.7018-1.5668 2.6836-3.8741 2.6836-6.615z"/><path fill="#34A853" d="M9 18c2.43 0 4.4673-.806 5.9564-2.1805l-2.9087-2.2581c-.8059.54-1.8368.8591-3.0477.8591-2.344 0-4.3282-1.5831-5.036-3.7104H.9573v2.3318C2.4382 15.9832 5.4818 18 9 18Z"/><path fill="#FBBC05" d="M3.964 10.71c-.18-.54-.2823-1.1168-.2823-1.71s.1023-1.17.2823-1.71V4.9582H.9573A8.9965 8.9965 0 0 0 0 9c0 1.4523.3477 2.8268.9573 4.0418L3.964 10.71Z"/><path fill="#EA4335" d="M9 3.5799c1.3214 0 2.5077.4541 3.4405 1.346l2.5813-2.5814C13.4632.8918 11.426 0 9 0 5.4818 0 2.4382 2.0168.9573 4.9582L3.964 7.29C4.6718 5.1627 6.656 3.5799 9 3.5799Z"/></svg>
+            </a>
+            <div class="hero__marks-row">
+              <span>Locally owned</span>
+              <span>Auckland &amp; Waikato</span>
+              <span>Residential &amp; commercial</span>
+              <span>New builds &amp; under construction</span>
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="brandstrip brandstrip--light">
+    <div class="wrap brandstrip__wrap">
+      <span class="brandstrip__label">We install</span>
+      <div class="brandstrip__viewport">
+        <div class="brandstrip__track">
+          <ul class="brandstrip__set">
+            <li>Daikin</li>
+            <li>Panasonic</li>
+            <li>Mitsubishi Electric</li>
+            <li>HRV</li>
+            <li>Ducted systems</li>
+            <li>Wi-Fi control</li>
+          </ul>
+          <ul class="brandstrip__set" aria-hidden="true">
+            <li>Daikin</li>
+            <li>Panasonic</li>
+            <li>Mitsubishi Electric</li>
+            <li>HRV</li>
+            <li>Ducted systems</li>
+            <li>Wi-Fi control</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
-</section>
+
+  <section class="calc-promo" id="calculator-promo">
+    <div class="wrap">
+      <div class="calc-promo__inner">
+        <div class="calc-promo__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="8" rx="2" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M8 10V7a4 4 0 0 1 8 0v3" stroke="currentColor" stroke-width="1.8" fill="none"/></svg>
+        </div>
+        <div class="calc-promo__text">
+          <h2>Not sure what size heat pump you need?</h2>
+          <p>Answer a few quick questions about your room and get an approximate heat-pump size in about a minute — no contact details required.</p>
+        </div>
+        <a class="btn btn--hot" href="calculator.html">Heat Pump Sizing Calculator</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tint" id="solutions">
+    <div class="wrap">
+      <div class="head">
+        <h2>Solutions</h2>
+        <p class="lede">Delta Air Solutions Ltd provides professional heating, cooling and ventilation across Auckland and Waikato, for homes and businesses — retrofit and new build.</p>
+      </div>
+      <div class="sol__cards sol__cards--3">
+        <a class="sol__link" href="solutions.html#heat-pumps"><h3>1. Heat Pumps</h3><p>High-wall and floor console systems for individual rooms and open-plan areas.</p></a>
+        <a class="sol__link" href="solutions.html#ducted-heating-cooling"><h3>2. Ducted Heating &amp; Cooling</h3><p>Whole-home comfort without a wall unit in every room.</p></a>
+        <a class="sol__link" href="solutions.html#multi-room-systems"><h3>3. Multi-Room Systems</h3><p>Several rooms from one outdoor system, with individual control.</p></a>
+        <a class="sol__link" href="solutions.html#ventilation"><h3>4. Ventilation</h3><p>Fresh, filtered air and better moisture management.</p></a>
+        <a class="sol__link" href="solutions.html#zoning-smart-controls"><h3>5. Zoning &amp; Smart Controls</h3><p>AirTouch, Daikin AirHub, room sensors and Wi-Fi control.</p></a>
+        <a class="sol__link" href="solutions.html#commercial-hvac"><h3>6. Commercial HVAC</h3><p>Offices, retail and commercial buildings.</p></a>
+        <a class="sol__link" href="solutions.html#service-maintenance"><h3>7. Service &amp; Maintenance</h3><p>Servicing, fault finding and scheduled maintenance.</p></a>
+      </div>
+      <div class="sol__cta sol__cta--wide">
+        <a class="btn btn--cool" href="solutions.html">View all solutions</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="offers">
+    <div class="wrap">
+      <div class="head">
+        <h2>Daikin website launch specials</h2>
+        <p class="lede">Fixed pricing on standard installations, so you know what the job costs before we start.</p>
+      </div>
+
+      <div class="offers offers--3">
+        <article class="offer">
+          <div class="offer__badge offer__badge--urgent">Final Alira stock — limited availability</div>
+          <div class="offer__kicker">Daikin ALIRA 2.2kW</div>
+          <h3>2.2kW Cooling &bull; 2.7kW Heating</h3>
+          <div class="price">$1,899 <small>incl. GST</small></div>
+          <p style="color:var(--muted);margin:0">Supplied &amp; installed</p>
+          <ul>
+            <li><span class="tick">✓</span> Ideal for bedrooms, offices and smaller rooms</li>
+            <li><span class="tick">✓</span> 5-Year Manufacturer Warranty</li>
+            <li><span class="tick">✓</span> 5-Year Delta Air Workmanship Warranty</li>
+          </ul>
+          <a class="btn btn--cool" href="#contact">Get this special</a>
+        </article>
+
+        <article class="offer">
+          <div class="offer__badge offer__badge--urgent">Final Alira stock — limited availability</div>
+          <div class="offer__kicker">Daikin ALIRA 5.0kW</div>
+          <h3>5.0kW Cooling &bull; 6.0kW Heating</h3>
+          <div class="price">$2,499 <small>incl. GST</small></div>
+          <p style="color:var(--muted);margin:0">Supplied &amp; installed</p>
+          <ul>
+            <li><span class="tick">✓</span> Ideal for living rooms and larger/open-plan areas</li>
+            <li><span class="tick">✓</span> 5-Year Manufacturer Warranty</li>
+            <li><span class="tick">✓</span> 5-Year Delta Air Workmanship Warranty</li>
+          </ul>
+          <a class="btn btn--hot" href="#contact">Get this special</a>
+        </article>
+
+        <article class="offer">
+          <div class="offer__badge offer__badge--launch">Website launch special</div>
+          <div class="offer__kicker">Daikin Lite 7.1kW</div>
+          <h3>7.1kW Cooling &bull; 8.0kW Heating</h3>
+          <div class="price">$3,099 <small>incl. GST</small></div>
+          <p style="color:var(--muted);margin:0">Supplied &amp; installed</p>
+          <ul>
+            <li><span class="tick">✓</span> Ideal for large living and open-plan areas</li>
+            <li><span class="tick">✓</span> 5-Year Manufacturer Warranty</li>
+            <li><span class="tick">✓</span> 5-Year Delta Air Workmanship Warranty</li>
+          </ul>
+          <a class="btn btn--cool" href="#contact">Get this special</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
 
   <!-- ============================================================
-       SOLUTIONS — the seven HVAC sections. Linked from the Solutions
-       dropdown and from the overview cards on the homepage.
-       Positioned as an HVAC specialist: electrical capability is
-       mentioned only where it supports HVAC work.
-       ============================================================ -->
+  <!-- Solutions overview — the detail for each service lives on
+       solutions.html, linked from the Solutions dropdown. -->
 
-  <section class="section section--tint sol" id="heat-pumps">
+  <section class="section">
     <div class="wrap">
-      <div class="head">
-        <span class="sol__eyebrow">1. Heat Pumps</span>
-        <h2>Heat Pumps for Comfortable Homes Year-Round</h2>
-        <p class="lede">Delta Air supplies and installs efficient heating and cooling for bedrooms, living rooms, open-plan spaces, offices and other individual areas. We help you choose the right heat pump based on the size and layout of the space, insulation, glazing, ceiling height, location and how the room is actually used. We specialise in both retrofit heat pump installations and new-build projects.</p>
-      </div>
+      <div class="head head--centred"><h2>What customers say</h2></div>
+      <p class="revs__link revs__link--centred"><a href="https://maps.app.goo.gl/xtZ1iGaVWvUuCjAD9" target="_blank" rel="noopener">Read our reviews on Google →</a></p>
 
-      <div class="sol__cards sol__cards--2">
-        <article class="sol__card">
-          <h3>High-Wall / Single-Split</h3>
-          <p>One indoor unit paired with one outdoor unit, providing both heating and cooling. The most popular way to condition individual rooms and open-plan areas.</p>
-          <p class="sol__label">Ideal for</p>
-          <ul class="sol__list">
-            <li>Bedrooms and living rooms</li>
-            <li>Open-plan kitchen/dining</li>
-            <li>Offices and rentals</li>
-            <li>Renovations and new homes</li>
-          </ul>
-          <p class="sol__label">Benefits</p>
-          <ul class="sol__list">
-            <li>Heating and cooling from one system</li>
-            <li>Fast temperature control, quiet operation</li>
-            <li>Energy-efficient, compact installation</li>
-            <li>Wide range of capacities</li>
-            <li>Wi-Fi control on selected models</li>
-          </ul>
-        </article>
-        <article class="sol__card">
-          <h3>Floor Console</h3>
-          <p>A lower-mounted indoor unit for situations where a high-wall unit isn't suitable, or where you simply prefer heat delivered at floor level.</p>
-          <p class="sol__label">Works well</p>
-          <ul class="sol__list">
-            <li>Under windows</li>
-            <li>Rooms with limited high-wall space</li>
-            <li>Homes with sloping ceilings</li>
-            <li>Certain renovation layouts</li>
-          </ul>
-          <p class="sol__label">Benefits</p>
-          <ul class="sol__list">
-            <li>Strong heating performance</li>
-            <li>Easy access to controls and filters</li>
-            <li>Heating and cooling</li>
-            <li>Suitable for retrofit and new build</li>
-          </ul>
-        </article>
-      </div>
+      <!-- REVIEWS: all real, from the Google listing. The carousel builds its
+           dots from however many slides are here, so add or remove freely. -->
+      <div class="revs" id="revs">
+        <div class="revs__viewport">
+          <div class="revs__track" id="revsTrack">
 
-      <div class="sol__note">
-        <h3>Heat pump vs electric heater</h3>
-        <p>A standard electric heater creates heat directly from electricity. A heat pump works differently — it transfers heat from one place to another. Because of that, a properly selected heat pump can generally provide significantly more efficient room heating than a standard resistance heater, with the added benefit of cooling in summer.</p>
-      </div>
+            <article class="rev">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>Great service, recommend. Fixed the heat pump for a reasonable price (in Ngāruawāhia), and advised on other heat pump &amp; extractor fan solutions.</blockquote>
+              <cite>kiwi perth</cite><small>Google review · 1 week ago</small>
+            </article>
+            <article class="rev">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>Very professional, quick &amp; excellent quality. No issues whatsoever.</blockquote>
+              <cite>Peter Parsons</cite><small>Google review · Great price · 1 month ago</small>
+            </article>
+            <article class="rev">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>HRV and heat pump service, and electrical wiring.</blockquote>
+              <cite>ramesh raju vastavai</cite><small>Google review · 1 month ago</small>
+            </article>
+            <article class="rev">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>Very good and fast service.</blockquote>
+              <cite>Hazra Ali</cite><small>Google review · Reasonable price · 1 month ago</small>
+            </article>
+            <article class="rev">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>On time. Satwinder did the job required of replacing two sensor security lights and checking one internal downlight, and checked that they were all working correctly.</blockquote>
+              <cite>Karee Boswell</cite><small>Google review · Local Guide · 2 months ago</small>
+            </article>
+            <article class="rev">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>Exceptional service from start to finish. We needed a heat pump installed before the colder weather sets in, and also had some faulty lights that needed fixing.</blockquote>
+              <cite>Gurinder jeet Singh</cite><small>Google review · 3 months ago</small>
+            </article>
+            <article class="rev">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>I had centralised heating and cooling done at home 3 months ago. It's so efficient and easily works through app. Great work done. Highly recommend.</blockquote>
+              <cite>Satnam Raju</cite><small>Google review · 3 months ago</small>
+            </article>
+            <article class="rev">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>Really impressed with their workmanship, attention to detail, and clean tidy finish with HRV installation. Great customer service and excellent communication.</blockquote>
+              <cite>Gurwinder Singh</cite><small>Google review · 4 months ago</small>
+            </article>
+            <article class="rev">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>Satwinder has fixed new heat pumps in our property recently and also repaired our old heat pump. We are very happy with their service — very professional.</blockquote>
+              <cite>Manoharan Kiruthika</cite><small>Google review · Local Guide · 4 months ago</small>
+            </article>
+            <article class="rev">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>Thank you for the great service. Reliable, fast and easy to deal with. Highly recommended.</blockquote>
+              <cite>Doreen Kumari</cite><small>Google review · 4 months ago</small>
+            </article>
+            <article class="rev">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>Delta Air Solutions — great friendly service for ventilation. Thanks.</blockquote>
+              <cite>klamse boy klamse guri</cite><small>Google review · 4 months ago</small>
+            </article>
+            <article class="rev">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>I've installed 5 heat pumps in my house through 3 different installations. Super easy to work with and quick installation.</blockquote>
+              <cite>Taylor Moore</cite><small>Google review · Local Guide · 5 months ago</small>
+            </article>
+            <article class="rev">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>Excellent service and workmanship for my HVAC servicing. Left the area of work clean and tidy after finishing the job. Thanks, Satwinder.</blockquote>
+              <cite>Ankit Jatana</cite><small>Google review · Local Guide · 5 months ago</small>
+            </article>
+            <article class="rev">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>Delta Air Solutions are experts in their field. His communication and professionalism are second to none, and his knowledge of products is fantastic.</blockquote>
+              <cite>Jordan Harris</cite><small>Google review · 5 months ago</small>
+            </article>
+            <article class="rev">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>Satwinder at Delta Air Solutions is an excellent workman. Honest, reliable and courteous. Satwinder has done plenty of work for me over the years.</blockquote>
+              <cite>Joel Bishop</cite><small>Google review · 6 months ago</small>
+            </article>
+            <article class="rev">
+              <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote>Great job. Highly recommended. The team has done excellent work in my office. Very professional.</blockquote>
+              <cite>Ravin Shankar</cite><small>Google review · 6 months ago</small>
+            </article>
 
-      <div class="sol__cards sol__cards--2">
-        <article class="sol__card sol__card--accent">
-          <span class="sol__tag">Retrofit</span>
-          <h3>Retrofit heat pump specialists</h3>
-          <p>Adding a heat pump to an existing home, or replacing an older system, takes more than picking a unit. We assess existing refrigerant pipework, drainage, electrical supply, outdoor unit location, wall construction, existing penetrations, indoor unit position, airflow and service access — then keep the finished installation clean and tidy.</p>
-        </article>
-        <article class="sol__card sol__card--accent">
-          <span class="sol__tag">New build</span>
-          <h3>New-build heat pumps</h3>
-          <p>For new homes we work with you or your builder before the internal walls and ceilings go up, planning indoor and outdoor unit positions, refrigerant pipework, drainage, HVAC electrical supply, isolators and future servicing access. Early planning makes for a much cleaner finished installation.</p>
-        </article>
-      </div>
+          </div>
+        </div>
 
-      <p class="sol__elec">Our registered electrician completes the electrical work associated with the HVAC installation — dedicated circuits, isolators and associated switchboard work where required.</p>
-
-      <!-- data-sticky-* lets the sticky bar show a different action from the
-           in-section button: the blue button sizes a unit, the orange bar
-           asks for a quote. -->
-      <div class="sol__cta" data-sticky-label="Get a free quote" data-sticky-href="#contact">
-        <a class="btn btn--cool" href="calculator.html">Find my heat pump size</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section sol" id="ducted-heating-cooling">
-    <div class="wrap">
-      <div class="head">
-        <span class="sol__eyebrow">2. Ducted Heating &amp; Cooling</span>
-        <h2>Whole-Home Ducted Heating &amp; Cooling</h2>
-        <p class="lede">Heating and cooling throughout the home without a wall unit in every room. A central indoor unit sits in the ceiling space, with conditioned air distributed through discreet ceiling or wall outlets. We design ducted systems for both retrofit installations and new-build projects.</p>
-      </div>
-
-      <div class="sol__cards sol__cards--3">
-        <article class="sol__card"><h3>Whole-home comfort</h3><p>Heat or cool multiple rooms from one central HVAC system.</p></article>
-        <article class="sol__card"><h3>Discreet appearance</h3><p>Most equipment is hidden in the ceiling space — only outlets, the return-air grille and controls are visible.</p></article>
-        <article class="sol__card"><h3>Zoning options</h3><p>Divide the system into zones so you control which areas receive heating or cooling.</p></article>
-        <article class="sol__card"><h3>Smart controls</h3><p>Wall controllers, room sensors, Wi-Fi/app control, zone control and smart zoning platforms on selected systems.</p></article>
-        <article class="sol__card"><h3>Quiet operation</h3><p>The main indoor unit is generally positioned away from normal living areas.</p></article>
-        <article class="sol__card"><h3>Clean interior design</h3><p>Whole-home heating and cooling without a high-wall unit in every room.</p></article>
-      </div>
-
-      <div class="sol__cards sol__cards--2">
-        <article class="sol__card sol__card--accent">
-          <span class="sol__tag">Retrofit</span>
-          <h3>Retrofit ducted systems</h3>
-          <p>A ducted system doesn't have to go in during construction. Where the property allows, we design and retrofit ducted heating and cooling into an existing home — assessing roof-space access, indoor unit location, duct routes, supply outlets, return-air position, zones, controller and sensor positions, outdoor unit position, condensate drainage, HVAC electrical supply and future service access.</p>
-          <p>The system is designed around your property, rather than forcing a standard layout into every home.</p>
-        </article>
-        <article class="sol__card sol__card--accent">
-          <span class="sol__tag">New build</span>
-          <h3>New-build ducted systems</h3>
-          <p>We work from the building plans before construction reaches final fit-off. Early HVAC planning coordinates duct routes, ceiling outlets, return-air grilles, zone dampers, controllers, room sensors, indoor unit location, access panels, outdoor unit position, condensate drainage and electrical requirements — for a more integrated, professional result.</p>
-        </article>
-      </div>
-
-      <div class="sol__cta">
-        <a class="btn btn--cool" href="#contact">Book a ducted consultation</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--tint sol" id="multi-room-systems">
-    <div class="wrap">
-      <div class="head">
-        <span class="sol__eyebrow">3. Multi-Room Systems</span>
-        <h2>Flexible Multi-Room Heating &amp; Cooling</h2>
-        <p class="lede">A practical option when several rooms need heating and cooling but a fully ducted system isn't suitable. Depending on the equipment, multiple indoor units run from one outdoor system — independent comfort in several rooms, with fewer outdoor units around the property.</p>
-      </div>
-
-      <div class="sol__cards sol__cards--2">
-        <article class="sol__card">
-          <h3>Ideal for</h3>
-          <ul class="sol__list">
-            <li>Multiple bedrooms</li>
-            <li>Townhouses and apartments</li>
-            <li>Renovations</li>
-            <li>Homes with limited outdoor-unit space</li>
-            <li>Properties where ducting isn't practical</li>
-            <li>Selected new-build projects</li>
-          </ul>
-        </article>
-        <article class="sol__card">
-          <h3>Benefits</h3>
-          <ul class="sol__list">
-            <li>Heating and cooling in multiple rooms</li>
-            <li>Individual room control</li>
-            <li>Fewer outdoor units</li>
-            <li>Flexible indoor-unit placement</li>
-            <li>Clean exterior appearance</li>
-            <li>Different indoor unit types may be available</li>
-          </ul>
-        </article>
-      </div>
-
-      <div class="sol__note">
-        <h3>Choosing between multi-room and ducted</h3>
-        <p>We won't default to a multi-room system just because several rooms need heating. We look at the property and compare individual single-split systems, multi-room systems and ducted heating and cooling. The right answer depends on home layout, number of rooms, roof-space availability, outdoor-unit space, your comfort expectations, budget and control requirements.</p>
-      </div>
-
-      <div class="sol__cta">
-        <a class="btn btn--cool" href="#contact">Discuss a multi-room solution</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section sol" id="ventilation">
-    <div class="wrap">
-      <div class="head">
-        <span class="sol__eyebrow">4. Ventilation</span>
-        <h2>Fresh Air &amp; Home Ventilation</h2>
-        <p class="lede">Heating and cooling are only part of a comfortable indoor environment. A properly designed ventilation system introduces fresh, filtered air, improves airflow and helps manage excess moisture inside the home — for existing homes and new builds alike.</p>
-      </div>
-
-      <div class="sol__cards sol__cards--2">
-        <article class="sol__card">
-          <h3>Ventilation solutions</h3>
-          <ul class="sol__list">
-            <li>Positive-pressure ventilation</li>
-            <li>Balanced ventilation</li>
-            <li>Heat-recovery ventilation</li>
-            <li>Whole-home ventilation</li>
-            <li>Bathroom and kitchen extraction</li>
-            <li>Selected SmartVent and HRV systems</li>
-          </ul>
-        </article>
-        <article class="sol__card">
-          <h3>Benefits</h3>
-          <ul class="sol__list">
-            <li>Fresher indoor air</li>
-            <li>Improved airflow through the home</li>
-            <li>Helps manage excess indoor moisture</li>
-            <li>Helps reduce condensation</li>
-            <li>Filtered incoming air</li>
-            <li>Improved indoor comfort</li>
-          </ul>
-        </article>
-      </div>
-
-      <div class="sol__note">
-        <h3>Every home is different</h3>
-        <p>The right ventilation solution depends on construction, insulation, existing moisture conditions, roof-space conditions, window performance, occupancy, how the home is heated and any existing extraction. We assess the home before recommending a final solution.</p>
-      </div>
-
-      <div class="sol__cards sol__cards--2">
-        <article class="sol__card sol__card--accent">
-          <span class="sol__tag">Retrofit</span>
-          <h3>Retrofit ventilation</h3>
-          <p>Existing homes may suit ventilation installed through available roof or ceiling spaces. We assess roof access, duct routes, outlet positions, intake locations, existing extraction and electrical requirements.</p>
-        </article>
-        <article class="sol__card sol__card--accent">
-          <span class="sol__tag">New build</span>
-          <h3>New-build ventilation</h3>
-          <p>Ventilation can be considered at the early design stage, allowing better planning of duct routes, supply outlets, extract points, equipment location, external vents, electrical supply and future servicing access.</p>
-        </article>
-      </div>
-
-      <p class="sol__elec">Our registered electrician completes the electrical work associated with the HVAC and ventilation equipment where required.</p>
-
-      <div class="sol__cta">
-        <a class="btn btn--cool" href="#contact">Book a ventilation assessment</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--tint sol" id="zoning-smart-controls">
-    <div class="wrap">
-      <div class="head">
-        <span class="sol__eyebrow">5. Zoning &amp; Smart Controls</span>
-        <h2>Smarter Control of Your Home Comfort</h2>
-        <p class="lede">Modern systems do far more than turn on and off. We integrate zoning, smart controllers, room sensors and Wi-Fi control — with ducted systems and selected high-wall heat pumps.</p>
-      </div>
-
-      <div class="sol__products">
-        <article class="sol__product">
-          <h3>AirTouch</h3>
-          <p>Smart zoning for compatible ducted systems.</p>
-          <ul class="sol__list">
-            <li>Central touchscreen control</li>
-            <li>Zone control</li>
-            <li>Temperature sensors</li>
-            <li>Smartphone/app control</li>
-          </ul>
-        </article>
-        <article class="sol__product">
-          <h3>Daikin AirHub</h3>
-          <p>Integrated control and zoning for compatible Daikin ducted systems.</p>
-          <ul class="sol__list">
-            <li>Ducted HVAC control</li>
-            <li>Zone control and room sensors</li>
-            <li>Central controller</li>
-            <li>Smart control features</li>
-          </ul>
-        </article>
-        <article class="sol__product">
-          <h3>Wi-Fi / app control</h3>
-          <p>Not just for ducted — selected high-wall heat pumps too.</p>
-          <ul class="sol__list">
-            <li>Turn on/off remotely</li>
-            <li>Change temperature and mode</li>
-            <li>Fan settings</li>
-            <li>Schedules and timers</li>
-          </ul>
-        </article>
-      </div>
-
-      <div class="sol__cards sol__cards--2">
-        <article class="sol__card">
-          <h3>Ducted zoning</h3>
-          <p>A zoned system lets different parts of the home be controlled independently — rather than conditioning every room whenever the system runs. Motorised zone dampers control the airflow delivered to each area: living and dining, kitchen, bedrooms, master bedroom, upstairs, downstairs, home office or guest rooms.</p>
-        </article>
-        <article class="sol__card">
-          <h3>Room temperature sensors</h3>
-          <p>Selected zoning systems use individual room sensors, so the system receives temperature information from different areas rather than relying on one central controller. The level of individual room control available depends on the HVAC system and zoning platform selected.</p>
-        </article>
-      </div>
-
-      <div class="sol__note">
-        <h3>Smart design, not just more zones</h3>
-        <p>More zones doesn't automatically mean a better system. We design the zone layout around how your home is actually used — a day zone for living, dining and kitchen; night zones for bedrooms; a separate master zone; and occasional-use areas like a guest room or office. Good zoning makes the system easier to use while improving comfort.</p>
-      </div>
-
-      <div class="sol__cta">
-        <a class="btn btn--cool" href="#contact">Discuss smart zoning</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section sol" id="commercial-hvac">
-    <div class="wrap">
-      <div class="head">
-        <span class="sol__eyebrow">6. Commercial HVAC</span>
-        <h2>Commercial Heating, Cooling &amp; Ventilation</h2>
-        <p class="lede">HVAC solutions for offices, retail spaces, commercial buildings and other business environments — new installations, equipment replacement, system upgrades, ventilation and ongoing support.</p>
-      </div>
-
-      <div class="sol__cards sol__cards--2">
-        <article class="sol__card">
-          <h3>Commercial solutions</h3>
-          <ul class="sol__list">
-            <li>High-wall and commercial split systems</li>
-            <li>Cassette systems</li>
-            <li>Ducted systems and ventilation</li>
-            <li>Replacement HVAC equipment</li>
-            <li>Controls and zoning</li>
-            <li>HVAC-related electrical work</li>
-            <li>Service and maintenance</li>
-            <li>Selected larger commercial projects</li>
-          </ul>
-        </article>
-        <article class="sol__card">
-          <h3>Who we work with</h3>
-          <ul class="sol__list">
-            <li>Business owners</li>
-            <li>Builders</li>
-            <li>Property managers</li>
-            <li>Developers</li>
-            <li>Main contractors</li>
-            <li>Other trades</li>
-          </ul>
-        </article>
-      </div>
-
-      <div class="sol__cards sol__cards--2">
-        <article class="sol__card sol__card--accent">
-          <span class="sol__tag">Retrofit</span>
-          <h3>Retrofit &amp; replacement</h3>
-          <p>Many commercial projects involve replacing or upgrading existing equipment. We assess the existing system, required capacity, equipment positioning, pipework, ductwork, electrical and control requirements, access and serviceability — for a practical solution suited to how the building is actually used.</p>
-        </article>
-        <article class="sol__card sol__card--accent">
-          <span class="sol__tag">New build</span>
-          <h3>New commercial projects</h3>
-          <p>For new builds and larger renovations we coordinate HVAC with the wider construction project — equipment locations, ductwork, pipework, ventilation, controls, electrical requirements, commissioning and future maintenance access.</p>
-        </article>
-      </div>
-
-      <div class="sol__cta" data-sticky-label="Request a site assessment" data-sticky-href="#contact">
-        <a class="btn btn--cool" href="#contact">Discuss your commercial project</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--tint sol" id="service-maintenance">
-    <div class="wrap">
-      <div class="head">
-        <span class="sol__eyebrow">7. Service &amp; Maintenance</span>
-        <h2>HVAC Service &amp; Maintenance</h2>
-        <p class="lede">Regular servicing helps keep heating, cooling and ventilation equipment operating correctly, and can identify potential problems before they become larger failures. We service residential and commercial HVAC equipment.</p>
-      </div>
-
-      <div class="sol__cards sol__cards--2">
-        <article class="sol__card">
-          <h3>Services may include</h3>
-          <ul class="sol__list">
-            <li>Heat pump servicing and filter cleaning</li>
-            <li>Indoor coil and outdoor unit inspection</li>
-            <li>Condensate drain and airflow checks</li>
-            <li>HVAC electrical checks</li>
-            <li>Performance testing and fault diagnosis</li>
-            <li>Controller troubleshooting</li>
-            <li>Component replacement where required</li>
-            <li>Ducted, zone-control and ventilation checks</li>
-          </ul>
-        </article>
-        <article class="sol__card">
-          <h3>Why maintenance matters</h3>
-          <ul class="sol__list">
-            <li>Maintain good airflow</li>
-            <li>Keep equipment cleaner</li>
-            <li>Maintain system performance</li>
-            <li>Identify developing problems</li>
-            <li>Reduce unexpected breakdowns</li>
-            <li>Support longer equipment life</li>
-            <li>Keep drains and filters clear</li>
-            <li>Ensure controls and zones operate correctly</li>
-          </ul>
-        </article>
-      </div>
-
-      <div class="sol__cards sol__cards--2">
-        <article class="sol__card">
-          <h3>Residential servicing</h3>
-          <p>High-wall heat pumps, floor consoles, multi-room systems, ducted systems, selected ventilation systems and associated controls.</p>
-        </article>
-        <article class="sol__card">
-          <h3>Commercial maintenance</h3>
-          <p>For suitable commercial sites we provide scheduled servicing, equipment inspection, filter maintenance, drainage checks, performance checks, fault assessment and maintenance reporting where required.</p>
-        </article>
-      </div>
-
-      <div class="sol__cta">
-        <a class="btn btn--cool" href="#contact">Book a service</a>
+        <div class="revs__nav">
+          <button class="revs__arrow" data-dir="-1" aria-label="Previous review">‹</button>
+          <div class="revs__dots" id="revsDots"></div>
+          <button class="revs__arrow" data-dir="1" aria-label="Next review">›</button>
+        </div>
       </div>
     </div>
   </section>
 
 
+  <section class="meet" aria-label="Delta Air Solutions">
+    <svg class="meet__flow" viewBox="0 0 1400 340" preserveAspectRatio="none" aria-hidden="true">
+      <g class="meet__cool">
+        <path pathLength="1000" d="M-20,60 C170,20 380,105 660,70"/>
+        <path pathLength="1000" d="M-20,170 C200,130 400,215 660,175"/>
+        <path pathLength="1000" d="M-20,285 C180,250 390,320 660,280"/>
+      </g>
+      <g class="meet__warm">
+        <path pathLength="1000" d="M1420,60 C1230,20 1020,105 740,70"/>
+        <path pathLength="1000" d="M1420,170 C1200,130 1000,215 740,175"/>
+        <path pathLength="1000" d="M1420,285 C1220,250 1010,320 740,280"/>
+      </g>
+    </svg>
+    <div class="wrap meet__inner">
+      <div class="logoring">
+        <svg class="logoring__svg" viewBox="0 0 400 400" aria-hidden="true">
+          <circle class="ring ring--1" pathLength="1000" cx="200" cy="200" r="190"/>
+          <circle class="ring ring--2" pathLength="1000" cx="200" cy="200" r="172"/>
+          <circle class="ring ring--3" pathLength="1000" cx="200" cy="200" r="154"/>
+          <circle class="ring ring--4" pathLength="1000" cx="200" cy="200" r="138"/>
+        </svg>
+        <div class="meet__mark" role="img" aria-label="Delta Air Solutions — Quality HVAC Solutions"></div>
+      </div>
+      <p class="meet__line">Warm air on one side. Cool air on the other.
+        <span>Delta is the difference between the air you've got and the air you want.</span>
+      </p>
+    </div>
+  </section>
+
+  <section class="section section--tint" id="about">
+    <div class="wrap">
+      <!-- Full "About Delta Air" copy (for a dedicated About page later):
+           Delta Air Solutions is a locally owned heating, cooling,
+           ventilation and electrical company serving Hamilton, the wider
+           Waikato and Auckland. With around 10 years of hands-on HVAC and
+           electrical experience, we provide practical, well-designed
+           solutions for homes, businesses and new builds — from high-wall
+           heat pumps and whole-home ducted systems to ventilation,
+           servicing and associated electrical work. We believe the right
+           system starts with correct sizing, thoughtful design and
+           professional installation. Rather than simply selling equipment,
+           we take the time to understand the property and recommend a
+           solution that suits the space, comfort requirements and budget.
+           We work with leading brands including Daikin, Panasonic and
+           Mitsubishi Electric, while maintaining the same focus on clean
+           workmanship, reliable service and ongoing support after
+           installation. Comfort designed properly. Installed
+           professionally. Supported locally.
+           The homepage below uses the shorter version instead. -->
+      <div class="about">
+        <div>
+          <h2 style="margin-bottom:1rem">Local experts, quality you can trust</h2>
+          <p>Locally owned and backed by around 10 years of HVAC and electrical experience, Delta Air provides professional heating, cooling and ventilation solutions across Waikato and Auckland. From a single heat pump to complete ducted systems, we focus on correct sizing, clean installations and reliable after-sales support. Every install is backed by a 5-Year Manufacturer Warranty and our own 5-Year Delta Air Workmanship Warranty.</p>
+          <div class="brands" style="margin-top:1.4rem">
+            <span>Daikin</span><span>Panasonic</span><span>Mitsubishi Electric</span><span>HRV</span>
+          </div>
+          <a href="about.html" style="display:inline-block;margin-top:1.2rem;font-family:'Montserrat',sans-serif;font-weight:700;font-size:.92rem;color:var(--blue-600);text-decoration:none">Read more about us →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section promise">
+    <div class="wrap">
+      <div class="promise__grid">
+        <div class="promise__item"><h3><span class="count" data-to="5">0</span> years</h3><p>Manufacturer's warranty</p></div>
+        <div class="promise__item"><h3>Free</h3><p>Quotes, with no obligation</p></div>
+        <div class="promise__item"><h3>Local</h3><p>Owned and run in the Waikato</p></div>
+        <div class="promise__item"><h3><span class="count" data-to="7">0</span> days</h3><p>Auckland and Waikato callouts</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tint" id="how">
+    <div class="wrap">
+      <div class="head">
+        <h2>How it works</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <h3>Free quote</h3>
+          <p>Call or send the form. We look at the rooms, the ceiling space and the power, then quote you a fixed price.</p>
+        </div>
+        <div class="step">
+          <h3>Fast install</h3>
+          <p>Most single heat pumps go in inside a day. Ducted and ventilation systems take a little longer, and we book a date that suits you.</p>
+        </div>
+        <div class="step">
+          <h3>Backed for years to come</h3>
+          <p>5-year manufacturer's warranty on the unit, plus a separate Delta Air installation warranty on our workmanship — and we're still local if you need us afterwards.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="finance">
+        <div>
+          <h2>Comfort now. Pay your way.</h2>
+          <p class="lede" style="margin-top:.8rem">Credit card payment options are available on installs, so you can get the system in before winter and spread the cost.</p>
+          <div class="cards">
+            <span>Gem Visa</span><span>Q Mastercard</span><span>Latitude</span><span>Visa</span><span>Mastercard</span>
+          </div>
+        </div>
+        <div>
+          <a class="btn btn--hot" href="#contact">Ask about payment options</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="avail" id="availability">
+    <div class="wrap">
+      <div class="avail__inner">
+        <div class="avail__text">
+          <h2>Check availability in your area</h2>
+          <p>We service Auckland and Waikato, including new builds. Get in touch and we'll confirm a time that works.</p>
+        </div>
+        <a class="btn btn--cool" href="#contact">Check availability</a>
+      </div>
+    </div>
+  </section>
 
   <section class="section" id="contact">
     <div class="wrap">
@@ -2039,14 +2100,14 @@ button.btn--hot{
     </div>
   </section>
 
+
+
 </main>
 
-<!-- One sticky CTA that mirrors whichever section the visitor is reading -->
-<div class="callbar callbar--single">
-  <a href="#contact" id="stickyCta">Get a free quote</a>
+<div class="update-bar" id="updateBar" role="status" aria-live="polite">
+  <span>A new version of this site is available.</span>
+  <button type="button" id="updateBarBtn">Refresh</button>
 </div>
-
-
 
 <footer class="footer">
   <div class="wrap">
@@ -2058,20 +2119,20 @@ button.btn--hot{
       <div>
         <h4>Services</h4>
         <div class="footer__services-list">
-          <a href="#heat-pumps">Heat Pumps</a>
-          <a href="#ducted-heating-cooling">Ducted Heating &amp; Cooling</a>
-          <a href="#multi-room-systems">Multi-Room Systems</a>
-          <a href="#ventilation">Ventilation</a>
-          <a href="#zoning-smart-controls">Zoning &amp; Smart Controls</a>
-          <a href="#commercial-hvac">Commercial HVAC</a>
-          <a href="#service-maintenance">Service &amp; Maintenance</a>
+          <a href="solutions.html#heat-pumps">Heat Pumps</a>
+          <a href="solutions.html#ducted-heating-cooling">Ducted Heating &amp; Cooling</a>
+          <a href="solutions.html#multi-room-systems">Multi-Room Systems</a>
+          <a href="solutions.html#ventilation">Ventilation</a>
+          <a href="solutions.html#zoning-smart-controls">Zoning &amp; Smart Controls</a>
+          <a href="solutions.html#commercial-hvac">Commercial HVAC</a>
+          <a href="solutions.html#service-maintenance">Service &amp; Maintenance</a>
         </div>
         <h4 class="footer__social-heading">Social</h4>
         <div class="footer__social">
           <a href="https://www.facebook.com/share/1Ewu4qPWee/" target="_blank" rel="noopener" aria-label="Delta Air Solutions on Facebook" title="Facebook">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036c-.257-.019-.628-.019-.939-.019-1.117 0-1.865.194-2.323.708-.457.514-.665 1.213-.665 2.187v1.09h4.35v.008l-.658 3.664h-3.68v7.98H9.107Z"/></svg>
           </a>
-          <a href="https://www.instagram.com/deltaairnz" target="_blank" rel="noopener" aria-label="Delta Air Solutions on Instagram" title="Instagram">
+          <a href="https://www.instagram.com/deltaairnz" data-ig-app="instagram://user?username=deltaairnz" target="_blank" rel="noopener" aria-label="Delta Air Solutions on Instagram" title="Instagram">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.418-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
           </a>
           <a href="https://www.tiktok.com/@deltaair.nz" target="_blank" rel="noopener" aria-label="Delta Air Solutions on TikTok" title="TikTok">
@@ -2091,12 +2152,112 @@ button.btn--hot{
   </div>
 </footer>
 
+<div class="callbar">
+  <a href="tel:0800247888">Call 0800 247 888</a>
+  <a href="#contact">Free quote</a>
+</div>
+
 <script>
-// Mobile nav (burger + Solutions submenu), matching the homepage behaviour.
-var nav = document.getElementById('nav');
-var burger = document.querySelector('.burger');
-if (burger && nav) {
-  burger.addEventListener('click', function(e){
+/* ================================================================
+   PROMOTIONAL CAMPAIGN CONFIG
+   ----------------------------------------------------------------
+   GIVEAWAY_DEADLINE
+     When entries close. The promo bar removes itself automatically
+     the moment this passes — no manual edit needed on the day.
+     The time is anchored to NZ (+12:00), so a visitor browsing from
+     another country still sees it disappear at the correct moment.
+
+   GIVEAWAY_ENABLED
+     A manual master switch, in case you need to pull the promotion
+     early. Set to false to hide it regardless of the deadline.
+     ================================================================ */
+var GIVEAWAY_DEADLINE = new Date('2026-09-27T20:59:00+12:00');
+var GIVEAWAY_ENABLED = true;
+// Expires on its own once the deadline passes.
+var GIVEAWAY_ACTIVE = GIVEAWAY_ENABLED && (new Date() < GIVEAWAY_DEADLINE);
+
+(function applyPromoConfig(){
+  if (!GIVEAWAY_ACTIVE) {
+    var carousel = document.getElementById('giveawayCarousel');
+    var fab = document.getElementById('giveawayFab');
+    if (carousel) carousel.remove();
+    if (fab) fab.remove();
+  }
+})();
+
+// Live countdown on the floating giveaway button — updates every minute
+// and gets more urgent-sounding as the deadline nears, to encourage
+// people to enter sooner rather than later.
+(function(){
+  if (!GIVEAWAY_ACTIVE) return;
+  var el = document.getElementById('giveawayCountdown');
+  if (!el) return;
+  var deadline = new Date('2026-09-27T20:59:00');
+
+  function update(){
+    var diff = deadline - new Date();
+    if (diff <= 0) { el.textContent = 'Entries closed'; return; }
+    var days = Math.floor(diff / 86400000);
+    var hours = Math.floor((diff % 86400000) / 3600000);
+    var mins = Math.floor((diff % 3600000) / 60000);
+    if (days >= 2) el.textContent = 'Closes in ' + days + ' days';
+    else if (days === 1) el.textContent = 'Closes in 1 day — hurry!';
+    else if (hours >= 1) el.textContent = 'Closes in ' + hours + 'h ' + mins + 'm — hurry!';
+    else el.textContent = 'Closes in ' + mins + 'm — last chance!';
+  }
+  update();
+  setInterval(update, 60000);
+})();
+
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+// Giveaway carousel — cycles through a few short messages under the header
+(function(){
+  var stripA = document.getElementById('giveawayStripA');
+  var stripB = document.getElementById('giveawayStripB');
+  if (!stripA || !stripB) return;
+
+  // Three wordings so the line stays readable as the screen narrows.
+  // One continuous sentence rather than separate chunks — it reads as a
+  // single running line as the strip scrolls past.
+  var messagesFull = [
+    '🎉 <b>WIN a Daikin Alira Premium 2.5kW heat pump</b>&nbsp;plus standard installation, worth $2,499 incl. GST — entries close 8:59pm NZ on 27 September 2026, winner drawn at random and announced live on stage.',
+  ];
+  var messagesShort = [
+    '🎉 <b>WIN a Daikin Alira 2.5kW heat pump</b>&nbsp;plus installation, worth $2,499 — entries close 8:59pm, 27 September, winner drawn live on stage.',
+  ];
+  var messagesTiny = [
+    '🎉 <b>WIN a Daikin heat pump</b>&nbsp;plus installation, worth $2,499 — closes 8:59pm 27 September, drawn live on stage.',
+  ];
+  var narrow = window.matchMedia('(max-width: 520px)');
+  var tiny = window.matchMedia('(max-width: 380px)');
+  function pickSet(){ return tiny.matches ? messagesTiny : (narrow.matches ? messagesShort : messagesFull); }
+  var messages = pickSet();
+
+  // All messages run together as one continuous line, separated by a dot.
+  function build(){
+    // spacing between repeats of the sentence as it loops around
+    // Blank spacer rather than a dot — a visible separator ends up sitting
+    // directly in front of "WIN a Daikin..." each time the strip loops.
+    var sep = '<span class="giveaway-carousel__sep"></span>';
+    var html = '';
+    for (var i = 0; i < messages.length; i++) {
+      var m = messages[i];
+      html += (typeof m === 'function' ? m() : m) + sep;
+    }
+    stripA.innerHTML = html;
+    stripB.innerHTML = html;   // second copy makes the loop seamless
+  }
+  build();
+
+  // Rebuild on breakpoint change so the shorter phone wording is used.
+  function onBreakpoint(){ messages = pickSet(); build(); }
+  narrow.addEventListener('change', onBreakpoint);
+  tiny.addEventListener('change', onBreakpoint);
+})();
+
+var burger = document.querySelector('.burger'), nav = document.getElementById('nav');
+burger.addEventListener('click', function(e){
   // Clicking the burger focuses it, and the browser scrolls to bring a newly
   // focused element into view — which threw the visitor back up the page
   // whenever they opened the menu part-way down. Preventing the default and
@@ -2107,115 +2268,547 @@ if (burger && nav) {
   var keepY = window.scrollY;
   var pin = function(){ if (window.scrollY !== keepY) window.scrollTo(0, keepY); };
   pin(); requestAnimationFrame(pin); setTimeout(pin, 60); setTimeout(pin, 180);
-    var open = nav.classList.toggle('is-open');
-    burger.setAttribute('aria-expanded', open);
-    if (!open) nav.classList.remove('submenu-active');
-  });
+  var open = nav.classList.toggle('is-open');
+  burger.setAttribute('aria-expanded', open);
+  clearTimeout(navOpenTimer);
+  if (open) {
+    // The opening transition itself (sticky header growing as the panel
+    // unfolds) generates its own scroll events for ~0.8s — ignore scroll
+    // entirely until that settles, then start watching for a real scroll.
+    navReady = false;
+    navOpenTimer = setTimeout(function(){ navReady = true; navScrollY = window.scrollY; }, 850);
+  }
+});
+function closeNav(){
+  nav.classList.remove('is-open', 'submenu-active'); burger.setAttribute('aria-expanded','false');
+  var drop = document.querySelector('.nav__drop');
+  if (drop) { drop.classList.remove('is-open'); document.getElementById('solutionsBtn').setAttribute('aria-expanded','false'); }
 }
+nav.addEventListener('click', function(e){
+  var link = e.target.closest('a[href^="#"]');
+  if (!link) return;
+  if (!nav.classList.contains('is-open')) return; // desktop nav: let the browser jump normally
+  // Mobile: the menu is about to collapse. If we let the browser jump to the
+  // anchor right now, it measures the target's position while the menu is
+  // still full height, then the collapse shifts everything up afterwards —
+  // landing scrolled too far past the section. So: close the menu instantly
+  // (no animation) first, THEN scroll, once the layout has actually settled.
+  e.preventDefault();
+  var targetId = link.getAttribute('href').slice(1);
+  var target = document.getElementById(targetId);
+  nav.style.transition = 'none';
+  closeNav();
+  void nav.offsetHeight; // force the collapse to apply immediately
+  nav.style.transition = '';
+  if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+
+// tap anywhere outside the menu (or press Escape) and it closes
+document.addEventListener('click', function(e){
+  if (!nav.classList.contains('is-open')) return;
+  if (nav.contains(e.target) || burger.contains(e.target)) return;
+  closeNav();
+});
+document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeNav(); });
+
+// "Solutions" — on desktop, click to open/close a floating dropdown panel,
+// closing on outside click, Escape, or choosing a link.
+// On mobile, tapping "Solutions" instead swaps the whole mobile menu to
+// show just the Solutions submenu (with a Back button above it) rather
+// than a cramped inline accordion or leaving the page entirely.
 var solutionsDrop = document.querySelector('.nav__drop');
 var solutionsBtn = document.getElementById('solutionsBtn');
 var solutionsBack = document.getElementById('solutionsBack');
 function isMobileNav(){ return window.matchMedia('(max-width: 980px)').matches; }
-if (solutionsBtn) {
-  solutionsBtn.addEventListener('click', function(e){
-    e.stopPropagation();
-    if (isMobileNav()) { nav.classList.add('submenu-active'); solutionsBtn.setAttribute('aria-expanded','true'); return; }
-    var open = solutionsDrop.classList.toggle('is-open');
-    solutionsBtn.setAttribute('aria-expanded', open);
-  });
-}
-if (solutionsBack) {
-  solutionsBack.addEventListener('click', function(e){
-    e.stopPropagation();
-    nav.classList.remove('submenu-active');
-    solutionsBtn.setAttribute('aria-expanded','false');
-  });
-}
+solutionsBtn.addEventListener('click', function(e){
+  e.stopPropagation();
+  if (isMobileNav()) {
+    nav.classList.add('submenu-active');
+    solutionsBtn.setAttribute('aria-expanded', 'true');
+    return;
+  }
+  var open = solutionsDrop.classList.toggle('is-open');
+  solutionsBtn.setAttribute('aria-expanded', open);
+});
+solutionsBack.addEventListener('click', function(e){
+  e.stopPropagation();
+  nav.classList.remove('submenu-active');
+  solutionsBtn.setAttribute('aria-expanded', 'false');
+});
 document.addEventListener('click', function(e){
-  if (!solutionsDrop || !solutionsDrop.classList.contains('is-open')) return;
+  if (!solutionsDrop.classList.contains('is-open')) return;
   if (solutionsDrop.contains(e.target) && !e.target.closest('#solutionsPanel a')) return;
   solutionsDrop.classList.remove('is-open');
-  solutionsBtn.setAttribute('aria-expanded','false');
+  solutionsBtn.setAttribute('aria-expanded', 'false');
 });
-// close the mobile menu after choosing a solution
-document.querySelectorAll('#solutionsPanel a').forEach(function(a){
-  a.addEventListener('click', function(){
-    nav.classList.remove('is-open','submenu-active');
-    if (burger) burger.setAttribute('aria-expanded','false');
-  });
-});
-// Close the menu (and the Solutions submenu) as soon as the page starts
-// scrolling — matching the homepage behaviour.
-function closeNav(){
-  if (!nav) return;
-  nav.classList.remove('is-open','submenu-active');
-  if (burger) burger.setAttribute('aria-expanded','false');
-  if (solutionsDrop) solutionsDrop.classList.remove('is-open');
-  if (solutionsBtn) solutionsBtn.setAttribute('aria-expanded','false');
-}
-var navScrollY = window.scrollY;
+
+// as soon as the page actually starts scrolling, close the dropped-down menu.
+var navScrollY = window.scrollY, navReady = true, navOpenTimer = null;
 window.addEventListener('scroll', function(){
-  if (!nav || !nav.classList.contains('is-open')) { navScrollY = window.scrollY; return; }
+  if (!nav.classList.contains('is-open') || !navReady) { navScrollY = window.scrollY; return; }
   if (Math.abs(window.scrollY - navScrollY) > 8) closeNav();
 }, {passive:true});
-document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeNav(); });
 
-var yr = document.getElementById('yr');
-if (yr) yr.textContent = new Date().getFullYear();
+var hero = document.querySelector('.hero'),
+    sub  = document.getElementById('heroSub');
+var userPicked = false;
+var roomTempManual = false; // becomes true once the visitor uses the +/- buttons themselves
+function setMode(mode){
+  hero.dataset.mode = mode;          // the sub-headline is the same in both modes
+  document.querySelectorAll('.toggle button[data-mode]').forEach(function(b){
+    b.setAttribute('aria-pressed', b.dataset.mode === mode);
+  });
+  var roomVal = document.getElementById('hpRoomVal');
+  if (roomVal && !roomTempManual) roomVal.textContent = mode === 'heating' ? '22' : '21';
+  // The giveaway carousel under the header always takes the opposite
+  // colour from the hero, so the two bands read as complementary
+  // rather than clashing: hero blue -> carousel orange, and vice versa.
+  var carousel = document.getElementById('giveawayCarousel');
+  if (carousel) carousel.dataset.scheme = mode === 'cooling' ? 'orange' : 'blue';
+}
+setMode(hero.dataset.mode || 'cooling'); // sync the room-temp readout with whatever mode the markup starts in
+var hpunit = document.querySelector('.hpunit');
 
-// Sticky call/quote bar — appears once the visitor is past the page hero.
+// On tablet/laptop, size the AC unit widget to match the width of the
+// "Breathe better. Live better." heading, so it reads as a properly
+// proportioned pair rather than a small box next to wide text. On mobile,
+// the widget keeps its normal compact size. Either way, the "Your comfort.
+// Your control." hint is always centred to the *widget's own* current
+// width — not the wider column around it — so it stays lined up under
+// the unit exactly, at any screen size.
 (function(){
-  var bar = document.querySelector('.callbar');
-  var hero = document.querySelector('.sol-page-hero');
-  if (!bar || !hero) return;
-  var sync = function(){
-    bar.classList.toggle('is-visible', hero.getBoundingClientRect().bottom < 120);
-  };
-  window.addEventListener('scroll', sync, {passive:true});
-  window.addEventListener('resize', sync);
-  sync();
-})();
-
-// Sticky CTA follows the section in view, so the button always offers the
-// action that matches what the visitor is currently reading.
-(function(){
-  var cta = document.getElementById('stickyCta');
-  if (!cta) return;
-  var sections = [].slice.call(document.querySelectorAll('section.sol'));
-  if (!sections.length) return;
-
-  var current = null;
-  function apply(sec){
-    var box = sec && sec.querySelector('.sol__cta');
-    var src = box && box.querySelector('a');
-    // A section can override what the sticky bar offers via data-sticky-*.
-    var label = (box && box.dataset.stickyLabel) || (src ? src.textContent.trim() : 'Get a free quote');
-    var href  = (box && box.dataset.stickyHref)  || (src ? src.getAttribute('href') : '#contact');
-    if (label === cta.textContent.trim()) return;
-    cta.classList.add('is-swapping');
-    setTimeout(function(){
-      cta.textContent = label;
-      cta.setAttribute('href', href);
-      cta.classList.remove('is-swapping');
-    }, 180);
-  }
-
-  function sync(){
-    // whichever section occupies the middle of the viewport wins
-    var mid = window.innerHeight / 2;
-    var found = null;
-    for (var i = 0; i < sections.length; i++) {
-      var r = sections[i].getBoundingClientRect();
-      if (r.top <= mid && r.bottom >= mid) { found = sections[i]; break; }
+  var heading = document.querySelector('.hero h1, .hero h2');
+  function alignUnit(){
+    if (!heading || !hpunit) return;
+    if (window.matchMedia('(min-width: 900px)').matches) {
+      var targetWidth = heading.getBoundingClientRect().width;
+      hpunit.style.width = targetWidth + 'px';
+      hpunit.classList.add('is-fitted');
+    } else {
+      hpunit.style.width = '';
+      hpunit.classList.remove('is-fitted');
     }
-    if (found && found !== current) { current = found; apply(found); }
+    // The "Your comfort is one step away" hint now lives inside the unit,
+    // so it centres itself naturally — no explicit width needed.
   }
-  window.addEventListener('scroll', sync, {passive:true});
-  window.addEventListener('resize', sync);
-  sync();
+  alignUnit();
+  window.addEventListener('resize', alignUnit);
+  // re-check shortly after load too, once webfonts have settled and the
+  // heading's real rendered width is final
+  window.addEventListener('load', alignUnit);
+  setTimeout(alignUnit, 400);
 })();
 
-// ── Contact form (mirrors the homepage) ──────────────────────────────
+function powerOn(){
+  hpunit.classList.remove('run');
+  void hpunit.offsetWidth;          // forces the browser to restart the animations
+  hpunit.classList.add('run');
+  hpunit.classList.add('spaced');   // the gap stays, even when switched off
+}
+powerOn();
+
+// Shared on/off state so both the power button and the heat/cool buttons can control it.
+var power = document.getElementById('hpPower'), label = document.getElementById('hpPowerLabel'), on = true;
+function turnOn(){
+  if (on) return;
+  on = true;
+  hpunit.classList.remove('is-off');
+  hpunit.classList.add('spaced');
+  hero.classList.remove('unit-off');
+  label.textContent = 'ON';
+  power.setAttribute('aria-pressed', true);
+  powerOn();
+}
+function turnOff(){
+  on = false;
+  hpunit.classList.add('is-off');
+  hpunit.classList.remove('spaced');   // off returns the copy to its opening position
+  hero.classList.add('unit-off');
+  label.textContent = 'OFF';
+  power.setAttribute('aria-pressed', false);
+  hpunit.classList.remove('run');      // window shuts, air stops
+}
+
+document.querySelectorAll('.toggle button[data-mode]').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    userPicked = true;
+    setMode(btn.dataset.mode);
+    if (!on) turnOn(); else powerOn();   // heat/cool also switches the unit back on if it was off
+  });
+});
+
+// tapping the logo powers the unit on and off
+power.addEventListener('click', function(){
+  if (on) turnOff(); else turnOn();
+});
+
+// the +/- buttons let visitors actually dial the room target temperature,
+// like a real remote, instead of only switching heat/cool on and off
+(function(){
+  var roomVal = document.getElementById('hpRoomVal');
+  var down = document.getElementById('hpRoomDown'), up = document.getElementById('hpRoomUp');
+  var MIN = 16, MAX = 30;
+  function step(delta){
+    var val = Math.min(MAX, Math.max(MIN, parseInt(roomVal.textContent, 10) + delta));
+    roomVal.textContent = val;
+    roomTempManual = true;
+    down.disabled = val <= MIN;
+    up.disabled = val >= MAX;
+    if (!on) turnOn(); else powerOn();
+  }
+  down.addEventListener('click', function(){ step(-1); });
+  up.addEventListener('click', function(){ step(1); });
+
+  // If the page is restored from the browser's back/forward cache (e.g. the
+  // visitor hits Back after leaving), it can reappear exactly as they left
+  // it rather than truly reloading. Force it back to the default state so
+  // the unit always starts fresh whenever the site is reopened.
+  window.addEventListener('pageshow', function(event){
+    if (!event.persisted) return;
+    roomTempManual = false;
+    down.disabled = false; up.disabled = false;
+    setMode(hero.dataset.mode || 'cooling');
+  });
+})();
+
+
+
+/* Live outside temperature on the unit, and the mode chosen to match.
+   Open-Meteo needs no API key. We try the visitor's own location first
+   (browser geolocation); if they decline, it's unavailable, or it times
+   out, we fall back to Hamilton — Delta Air's home base — so there's
+   always a sensible reading either way.
+
+   Mode logic:
+   - Daytime (sunrise to sunset): always COOLING — never heating, no
+     matter the temperature.
+   - Night-time (sunset to sunrise): HEATING, unless it's still warm
+     outside (>= SWITCH_AT), in which case it stays on COOLING rather
+     than flipping to heat just because the sun's gone down.
+   - If sunrise/sunset data isn't available for some reason, falls back
+     to temperature alone: below SWITCH_AT = heating, otherwise cooling. */
+var FALLBACK_LAT = -37.7870, FALLBACK_LON = 175.2793, FALLBACK_PLACE = 'Hamilton', SWITCH_AT = 18;
+
+function fetchOutsideTemp(lat, lon, placeLabel){
+  var url = 'https://api.open-meteo.com/v1/forecast?latitude=' + lat + '&longitude=' + lon +
+            '&current=temperature_2m&daily=sunrise,sunset&timezone=auto';
+  fetch(url).then(function(r){ return r.ok ? r.json() : Promise.reject(r.status); })
+  .then(function(d){
+    var t = d && d.current && d.current.temperature_2m;
+    if (typeof t !== 'number') return;
+    document.getElementById('hpTempVal').textContent = Math.round(t);
+    document.getElementById('hpTemp').title = (placeLabel ? placeLabel + ' ' : '') + 'now: ' + Math.round(t) + '°C';
+    document.getElementById('hpTemp').classList.add('is-live');
+
+    if (userPicked) return;
+
+    var mode = t < SWITCH_AT ? 'heating' : 'cooling'; // fallback if no sunrise/sunset data
+    var sunrise = d.daily && d.daily.sunrise && d.daily.sunrise[0];
+    var sunset  = d.daily && d.daily.sunset  && d.daily.sunset[0];
+    if (sunrise && sunset) {
+      var now = new Date(), isDaytime = now >= new Date(sunrise) && now < new Date(sunset);
+      mode = isDaytime ? 'cooling' : (t < SWITCH_AT ? 'heating' : 'cooling');
+    }
+    setMode(mode);
+  })
+  .catch(function(e){ console.warn('Delta Air: weather lookup failed, showing default mode.', e); });
+}
+
+(function loadTemp(){
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      function(pos){
+        fetchOutsideTemp(pos.coords.latitude, pos.coords.longitude, 'Your location');
+      },
+      function(){
+        // permission denied, unavailable, or timed out — use the fallback
+        fetchOutsideTemp(FALLBACK_LAT, FALLBACK_LON, FALLBACK_PLACE);
+      },
+      { timeout: 6000, maximumAge: 10 * 60 * 1000 }
+    );
+  } else {
+    fetchOutsideTemp(FALLBACK_LAT, FALLBACK_LON, FALLBACK_PLACE);
+  }
+})();
+
+// Sticky call bar — slides up once the hero (and its buttons) has scrolled away
+var callbar = document.querySelector('.callbar');
+if (callbar && hero) {
+  // Show the sticky call/quote bar as soon as the visitor reaches the
+  // "No cost, no obligation" assessment card — that's the point they're
+  // weighing up getting in touch. Previously it waited for the whole hero
+  // to scroll past, which was roughly 550px too late on a phone.
+  var trigger = document.querySelector('.hero__card') || hero;
+  var syncCallbar = function(){
+    var r = trigger.getBoundingClientRect();
+    // visible once the card's top edge has risen into the upper half of
+    // the screen, and stays visible from then on down the page
+    var reached = r.top < window.innerHeight * 0.55;
+    callbar.classList.toggle('is-visible', reached);
+  };
+  window.addEventListener('scroll', syncCallbar, {passive:true});
+  window.addEventListener('resize', syncCallbar);
+  syncCallbar();
+}
+
+
+
+// Hero headline arrives word by word
+(function(){
+  var h1=document.querySelector('.hero h1');
+  if(!h1) return;
+  var words=h1.textContent.trim().split(/\s+/);
+  h1.textContent='';
+  words.forEach(function(w,i){
+    var s=document.createElement('span');
+    s.className='w'; s.textContent=w;
+    s.style.animationDelay=(120+i*85)+'ms';
+    h1.appendChild(s);
+    if(i<words.length-1) h1.appendChild(document.createTextNode(' '));
+  });
+})();
+
+// Review carousel
+(function(){
+  var root=document.getElementById('revs');
+  if(!root) return;
+  var track=document.getElementById('revsTrack'),
+      dots=document.getElementById('revsDots'),
+      slides=track.children, n=slides.length, i=0, timer;
+
+  for(var k=0;k<n;k++){
+    var d=document.createElement('button');
+    d.setAttribute('aria-label','Review '+(k+1));
+    d.addEventListener('click', (function(x){ return function(){ go(x); rest(); }; })(k));
+    dots.appendChild(d);
+  }
+  function go(x){
+    i=(x+n)%n;
+    track.style.transform='translateX('+(-i*100)+'%)';
+    for(var k=0;k<n;k++){
+      dots.children[k].setAttribute('aria-current', k===i);
+      slides[k].setAttribute('aria-hidden', k!==i);
+    }
+  }
+  function rest(){ clearInterval(timer); timer=setInterval(function(){ go(i+1); }, 4200); }
+  root.querySelectorAll('.revs__arrow').forEach(function(b){
+    b.addEventListener('click', function(){ go(i + (+b.dataset.dir)); rest(); });
+  });
+  // swipe
+  var x0=null;
+  track.addEventListener('touchstart', function(e){ x0=e.touches[0].clientX; }, {passive:true});
+  track.addEventListener('touchend', function(e){
+    if(x0===null) return;
+    var dx=e.changedTouches[0].clientX-x0;
+    if(Math.abs(dx)>45){ go(i + (dx<0?1:-1)); rest(); }
+    x0=null;
+  }, {passive:true});
+  root.addEventListener('mouseenter', function(){ clearInterval(timer); });
+  root.addEventListener('mouseleave', rest);
+  go(0); rest();
+})();
+
+
+// Reveal on scroll + count up
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // counters
+  function runCount(el){
+    var to = +el.dataset.to, dur = 1400, t0 = null;
+    if (reduce){ el.textContent = to.toLocaleString('en-NZ'); return; }
+    function step(t){
+      if(!t0) t0 = t;
+      var p = Math.min((t-t0)/dur, 1);
+      var eased = 1 - Math.pow(1-p, 3);             // ease-out, fast then settling
+      el.textContent = Math.round(to*eased).toLocaleString('en-NZ');
+      if(p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  // things that fade up as they arrive
+  var targets = document.querySelectorAll(
+    '.head, .offer, .service, .step, .promise__item, .vent__list li, .vent__note, '
+    + '.revs, .about img, .about > div, .areas__cols > div, .form, .contact__detail, .logoring, .cards, .brands');
+  targets.forEach(function(el, i){
+    el.classList.add('reveal');
+    el.style.transitionDelay = ((i % 4) * 70) + 'ms';   // slight stagger within a row
+  });
+
+  if(!('IntersectionObserver' in window)){
+    targets.forEach(function(el){ el.classList.add('is-in'); });
+    document.querySelectorAll('.count').forEach(runCount);
+    return;
+  }
+
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(!e.isIntersecting) return;
+      e.target.classList.add('is-in');
+      e.target.querySelectorAll && e.target.querySelectorAll('.count').forEach(function(c){
+        if(!c.dataset.done){ c.dataset.done = 1; runCount(c); }
+      });
+      io.unobserve(e.target);
+    });
+  }, {threshold:.18, rootMargin:'0px 0px -40px 0px'});
+  targets.forEach(function(el){ io.observe(el); });
+
+  // counters that sit outside a revealed block (the hero card)
+  var solo = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting && !e.target.dataset.done){
+        e.target.dataset.done = 1; runCount(e.target); solo.unobserve(e.target);
+      }
+    });
+  }, {threshold:.6});
+  document.querySelectorAll('.count').forEach(function(c){ solo.observe(c); });
+})();
+
+// Placeholder form handling — delete once a real endpoint is wired up
+
+// ── Service worker + cache-busting ──────────────────────────────────────
+// Registers the service worker (install-as-app + offline support), then
+// watches for a newer version being deployed and shows a small "Refresh"
+// banner instead of silently reloading — so nobody loses form input they're
+// halfway through typing.
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function(){
+    navigator.serviceWorker.register('/sw.js', { scope: '/' }).then(function(reg){
+
+      function showUpdateBar(worker){
+        var bar = document.getElementById('updateBar');
+        if (!bar || bar.classList.contains('is-visible')) return;
+        bar.classList.add('is-visible');
+        document.getElementById('updateBarBtn').addEventListener('click', function(){
+          worker.postMessage('SKIP_WAITING');
+        }, { once: true });
+      }
+
+      // A worker was already waiting when this page loaded.
+      if (reg.waiting) showUpdateBar(reg.waiting);
+
+      // A new worker just finished installing.
+      reg.addEventListener('updatefound', function(){
+        var incoming = reg.installing;
+        if (!incoming) return;
+        incoming.addEventListener('statechange', function(){
+          if (incoming.state === 'installed' && navigator.serviceWorker.controller){
+            showUpdateBar(incoming);
+          }
+        });
+      });
+
+      // Once the new worker takes over, reload so the fresh HTML/assets apply.
+      var reloading = false;
+      navigator.serviceWorker.addEventListener('controllerchange', function(){
+        if (reloading) return;
+        reloading = true;
+        window.location.reload();
+      });
+
+      // Installed PWAs often reopen from a cached launch rather than doing a
+      // fresh navigation, so the browser's own update check can lag. Force a
+      // check whenever the app regains focus, plus hourly as a backstop.
+      document.addEventListener('visibilitychange', function(){
+        if (document.visibilityState === 'visible') reg.update();
+      });
+      setInterval(function(){ reg.update(); }, 60 * 60 * 1000);
+
+      // Belt-and-braces for iOS Safari, where standalone-PWA service worker
+      // update timing is the least reliable: poll a tiny, never-cached
+      // version.json and compare it to this page's own version. A mismatch
+      // means a deploy has happened even if the SW hasn't noticed yet.
+      var currentVersion = document.querySelector('meta[name="app-version"]');
+      currentVersion = currentVersion ? currentVersion.content : null;
+      function checkVersionFile(){
+        fetch('version.json', { cache: 'no-store' })
+          .then(function(r){ return r.ok ? r.json() : null; })
+          .then(function(data){
+            if (data && currentVersion && data.version !== currentVersion) {
+              reg.update();
+              showUpdateBar(reg.waiting || reg.active);
+            }
+          })
+          .catch(function(){ /* offline — nothing to do */ });
+      }
+      document.addEventListener('visibilitychange', function(){
+        if (document.visibilityState === 'visible') checkVersionFile();
+      });
+      setInterval(checkVersionFile, 30 * 60 * 1000);
+
+    }).catch(function(err){
+      console.warn('Service worker registration failed:', err);
+    });
+  });
+}
+
+
+
+// Always-on countdown pill in the header promo bar.
+(function(){
+  var clock = document.getElementById('giveawayClock');
+  if (!clock) return;
+  if (typeof GIVEAWAY_ACTIVE !== 'undefined' && !GIVEAWAY_ACTIVE) { clock.remove(); return; }
+  var deadline = new Date('2026-09-27T20:59:00+12:00'); // 8:59pm NZ time
+  var compact = window.matchMedia('(max-width: 780px)');
+  function pad(n){ return n < 10 ? '0' + n : '' + n; }
+  function tick(){
+    var diff = deadline - new Date();
+    if (diff <= 0) { clock.textContent = 'Entries closed'; clearInterval(t); return; }
+    var d = Math.floor(diff / 86400000);
+    var h = Math.floor((diff % 86400000) / 3600000);
+    var m = Math.floor((diff % 3600000) / 60000);
+    var sec = Math.floor((diff % 60000) / 1000);
+    var hms = pad(h) + ':' + pad(m) + ':' + pad(sec);
+    clock.textContent = compact.matches
+      ? '⏳ ' + (d > 0 ? d + 'd ' : '') + hms
+      : '⏳ ' + (d > 0 ? d + 'd ' : '') + hms + ' left';
+  }
+  tick();
+  var t = setInterval(tick, 1000);
+})();
+
+
+
+// If a visitor has the page open when the deadline passes, remove the
+// promo bar there and then rather than leaving a closed offer on screen.
+(function(){
+  if (typeof GIVEAWAY_ACTIVE === 'undefined' || !GIVEAWAY_ACTIVE) return;
+  var check = setInterval(function(){
+    if (new Date() >= GIVEAWAY_DEADLINE) {
+      var bar = document.getElementById('giveawayCarousel');
+      if (bar) bar.remove();
+      clearInterval(check);
+    }
+  }, 30000);
+})();
+
+// Instagram — open the native app on mobile, fall back to the web profile.
+// The href stays as the normal https URL, so desktop, crawlers and anyone
+// without the app behave exactly as before.
+(function(){
+  var link = document.querySelector('a[data-ig-app]');
+  if (!link) return;
+  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  if (!isMobile) return;
+  link.addEventListener('click', function(e){
+    e.preventDefault();
+    var webUrl = link.getAttribute('href');
+    var appUrl = link.getAttribute('data-ig-app');
+    var start = Date.now();
+    // If the app opens, the page is backgrounded and the timer is delayed or
+    // never fires — so only fall back to the web when we're still here.
+    var fallback = setTimeout(function(){
+      if (document.hidden || Date.now() - start > 1600) return;
+      window.location.href = webUrl;
+    }, 900);
+    document.addEventListener('visibilitychange', function onHide(){
+      if (document.hidden) { clearTimeout(fallback); document.removeEventListener('visibilitychange', onHide); }
+    });
+    window.location.href = appUrl;
+  });
+})();
 
 // Quote form — optional photo attachments.
 // Files are held client-side and validated before submit; nothing is sent
@@ -2295,142 +2888,25 @@ if (yr) yr.textContent = new Date().getFullYear();
 })();
 </script>
 
-<script>
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function(){
-    navigator.serviceWorker.register('/sw.js', { scope: '/' }).then(function(reg){
 
-      function showUpdateBar(worker){
-        var bar = document.getElementById('updateBar');
-        if (!bar || bar.classList.contains('is-visible')) return;
-        bar.classList.add('is-visible');
-        document.getElementById('updateBarBtn').addEventListener('click', function(){
-          worker.postMessage('SKIP_WAITING');
-        }, { once: true });
-      }
-
-      // A worker was already waiting when this page loaded.
-      if (reg.waiting) showUpdateBar(reg.waiting);
-
-      // A new worker just finished installing.
-      reg.addEventListener('updatefound', function(){
-        var incoming = reg.installing;
-        if (!incoming) return;
-        incoming.addEventListener('statechange', function(){
-          if (incoming.state === 'installed' && navigator.serviceWorker.controller){
-            showUpdateBar(incoming);
-          }
-        });
-      });
-
-      // Once the new worker takes over, reload so the fresh HTML/assets apply.
-      var reloading = false;
-      navigator.serviceWorker.addEventListener('controllerchange', function(){
-        if (reloading) return;
-        reloading = true;
-        window.location.reload();
-      });
-
-      // Installed PWAs often reopen from a cached launch rather than doing a
-      // fresh navigation, so the browser's own update check can lag. Force a
-      // check whenever the app regains focus, plus hourly as a backstop.
-      document.addEventListener('visibilitychange', function(){
-        if (document.visibilityState === 'visible') reg.update();
-      });
-      setInterval(function(){ reg.update(); }, 60 * 60 * 1000);
-
-      // Belt-and-braces for iOS Safari, where standalone-PWA service worker
-      // update timing is the least reliable: poll a tiny, never-cached
-      // version.json and compare it to this page's own version. A mismatch
-      // means a deploy has happened even if the SW hasn't noticed yet.
-      var currentVersion = document.querySelector('meta[name="app-version"]');
-      currentVersion = currentVersion ? currentVersion.content : null;
-      function checkVersionFile(){
-        fetch('version.json', { cache: 'no-store' })
-          .then(function(r){ return r.ok ? r.json() : null; })
-          .then(function(data){
-            if (data && currentVersion && data.version !== currentVersion) {
-              reg.update();
-              showUpdateBar(reg.waiting || reg.active);
-            }
-          })
-          .catch(function(){ /* offline — nothing to do */ });
-      }
-      document.addEventListener('visibilitychange', function(){
-        if (document.visibilityState === 'visible') checkVersionFile();
-      });
-      setInterval(checkVersionFile, 30 * 60 * 1000);
-
-    }).catch(function(err){
-      console.warn('Service worker registration failed:', err);
-    });
-  });
-}
-</script>
 <script>
 </script>
 <script>
-</script>
-<script>
-// Promo banner — self-contained: config, scrolling marquee and countdown.
+// Clicking the "Solutions" label on desktop goes to the solutions page;
+// the chevron (and any tap on mobile) still opens the submenu instead.
 (function(){
-  var GIVEAWAY_DEADLINE = new Date('2026-09-27T20:59:00+12:00');
-  var GIVEAWAY_ENABLED = true;
-  var ACTIVE = GIVEAWAY_ENABLED && (new Date() < GIVEAWAY_DEADLINE);
-
-  var bar = document.getElementById('giveawayCarousel');
-  if (!bar) return;
-
-  // Some pages cap .wrap narrower than the site width (About uses 900px for
-  // body copy), which squeezed the scrolling message. Pin the bar's own
-  // wrapper to the full width so the banner reads the same everywhere.
-  var barWrap = bar.querySelector('.wrap');
-  if (barWrap) { barWrap.style.maxWidth = '1180px'; barWrap.style.width = '100%'; }
-  // and let the message area take all the space the pill and button leave
-  var barVp = bar.querySelector('.giveaway-carousel__viewport');
-  if (barVp) { barVp.style.flex = '1 1 auto'; barVp.style.maxWidth = 'none'; barVp.style.minWidth = '0'; }
-  if (!ACTIVE) { bar.remove(); return; }
-
-  // --- scrolling message -------------------------------------------------
-  var stripA = document.getElementById('giveawayStripA');
-  var stripB = document.getElementById('giveawayStripB');
-  if (stripA && stripB) {
-    var full = ['🎉 <b>WIN a Daikin Alira Premium 2.5kW heat pump</b>&nbsp;plus standard installation, worth $2,499 incl. GST — entries close 8:59pm NZ on 27 September 2026, winner drawn at random and announced live on stage.'];
-    var short = ['🎉 <b>WIN a Daikin Alira 2.5kW heat pump</b>&nbsp;plus installation, worth $2,499 — entries close 8:59pm, 27 September, winner drawn live on stage.'];
-    var tiny  = ['🎉 <b>WIN a Daikin heat pump</b>&nbsp;plus installation, worth $2,499 — closes 8:59pm 27 September, drawn live on stage.'];
-    var mqNarrow = window.matchMedia('(max-width: 520px)');
-    var mqTiny   = window.matchMedia('(max-width: 380px)');
-    function pick(){ return mqTiny.matches ? tiny : (mqNarrow.matches ? short : full); }
-    function build(){
-      var sep = '<span class="giveaway-carousel__sep"></span>';
-      var html = pick().map(function(m){ return m + sep; }).join('');
-      stripA.innerHTML = html;
-      stripB.innerHTML = html;
-    }
-    build();
-    mqNarrow.addEventListener('change', build);
-    mqTiny.addEventListener('change', build);
-  }
-
-  // --- countdown ---------------------------------------------------------
-  var clock = document.getElementById('giveawayClock');
-  if (clock) {
-    var compact = window.matchMedia('(max-width: 780px)');
-    function pad(n){ return n < 10 ? '0' + n : '' + n; }
-    function tick(){
-      var diff = GIVEAWAY_DEADLINE - new Date();
-      if (diff <= 0) { clock.textContent = 'Entries closed'; clearInterval(t); bar.remove(); return; }
-      var d = Math.floor(diff / 86400000);
-      var h = Math.floor((diff % 86400000) / 3600000);
-      var m = Math.floor((diff % 3600000) / 60000);
-      var s = Math.floor((diff % 60000) / 1000);
-      var hms = pad(h) + ':' + pad(m) + ':' + pad(s);
-      clock.textContent = '⏳ ' + (d > 0 ? d + 'd ' : '') + hms + (compact.matches ? '' : ' left');
-    }
-    tick();
-    var t = setInterval(tick, 1000);
-  }
+  var btn = document.getElementById('solutionsBtn');
+  if (!btn || !btn.dataset.href) return;
+  btn.addEventListener('click', function(e){
+    if (window.matchMedia('(max-width: 980px)').matches) return;   // mobile: submenu
+    if (e.target.closest('.nav__chev')) return;                    // chevron: dropdown
+    window.location.href = btn.dataset.href;
+  }, true);
 })();
+</script>
+<script>
+</script>
+<script>
 </script>
 <script>
 // Install-as-app menu item.
@@ -2589,6 +3065,41 @@ if ('serviceWorker' in navigator) {
   window.addEventListener('resize', sync);
   window.addEventListener('load', sync);
   if (window.ResizeObserver) new ResizeObserver(sync).observe(hdr);
+})();
+</script>
+<script>
+// Match the hero card's bottom edge to the hero buttons on laptop and up.
+// The left column's height varies with text wrapping, so measure rather
+// than guess; below 901px the layout is single column and this is skipped.
+(function(){
+  var card = document.querySelector('.hero__card');
+  var btns = document.querySelector('.hero__actions');
+  if (!card || !btns) return;
+  function sync(){
+    if (window.innerWidth < 901) { card.style.minHeight = ''; return; }
+    card.style.minHeight = '';
+    // Measure after the reset has been applied, using page coordinates so a
+    // mid-measure scroll can't skew the result.
+    void card.offsetHeight;
+    var cardTop = card.getBoundingClientRect().top + window.scrollY;
+    var btnsBottom = btns.getBoundingClientRect().bottom + window.scrollY;
+    var target = btnsBottom - cardTop;
+    // minHeight applies to the content box, so subtract vertical padding
+    // and borders or the card overshoots by exactly that amount.
+    var cs = getComputedStyle(card);
+    var extra = parseFloat(cs.paddingTop) + parseFloat(cs.paddingBottom)
+              + parseFloat(cs.borderTopWidth) + parseFloat(cs.borderBottomWidth);
+    if (cs.boxSizing === 'border-box') extra = 0;
+    if (target > 0) card.style.minHeight = Math.round(target - extra) + 'px';
+  }
+  window.addEventListener('load', sync);
+  window.addEventListener('resize', sync);
+  // Re-measure once webfonts land — they change how the hero copy wraps,
+  // which moves the buttons and leaves the card a few px out otherwise.
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(sync);
+  setTimeout(sync, 400);
+  setTimeout(sync, 1200);
+  sync();
 })();
 </script>
 </body>
